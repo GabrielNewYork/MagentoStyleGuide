@@ -1,0 +1,487 @@
+<template>
+<section class="tw-mb-20" id="Headerbottom">
+        
+    <div class="tw-border tw-border-gray-400 tw-border-solid tw-p-4">
+        <!-- Header Bottom -->
+        <div class="sm:tw-mt-16 navigation__wrapper">
+        <!-- Close navigation -->
+        <a href="javascript:void(0)" class="navigation__close" aria-label="Close">
+            <svg class="svg-close" width="20px" height="20px" aria-hidden="true" role="img">
+            <use href="#svg-close" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-close"></use>
+            </svg>
+        </a>
+        <!-- END: Close navigation -->
+        <div class="container">
+            <div class="navigation__wrapper--mobile tw-flex tw-flex-col">
+            <!-- Zipcode search -->
+            <div class="tw-my-10 tw-px-8 tw-block sm:tw-hidden">
+                <h1 class="tw-font-sans tw-text-base tw-m-0 tw-mb-2">Find A Store Near You</h1>
+                <form method="post" action="https://gabrieldev.smartagehosting.com/storelocator/results/" id="actionForm" novalidate="novalidate" class="tw-flex tw-flex-row tw-items-center">
+                <input placeholder="Zipcode" id="zip" name="zip" required="" type="text" value="" class="zicode-input tw-py-4 tw-px-3 tw-w-full">
+                <button id="btnResults1" class="tw-bg-gray-900 tw-border tw-border-solid tw-border-gray-900 tw-font-sans tw-w-1/4 tw-h-16 tw-tracking-wider tw-ml-0 tw-text-white tw-px-4">Find</button>
+                </form>
+
+            </div>
+            <!-- / Zipcode search -->
+            <div class="tw-flex tw-justify-between tw-items-center tw-order-2 tw-border-b tw-border-gray-100">
+                <!-- Mobile links -->
+                <ul class="tw-order-3 tw-list-none tw-flex tw-justify-around tw-items-center tw-px-2 tw-py-10 tw-w-full tw-border-b-0 tw-border-t tw-border-r-0 tw-border-l-0 tw-border-solid tw-border-gray-600 tw-mt-12 sm:tw-hidden">
+                <!-- Login -->
+                <li>
+                    <a href="https://www.gabrielny.com/login" title="User Login" class="tw-flex tw-flex-col tw-items-center  tw-text-gray-900 tw-no-underline">
+                        <svg class="svg-user" width="20px" height="20px" aria-hidden="true" role="img" viewBox="0 0 54 69">
+                            <path d="M1211.67608,463 C1203.58508,463 1197.00308,469.582 1197.00308,477.673 C1197.00308,485.764 1203.58508,492.346 1211.67608,492.346 C1219.76708,492.346 1226.34908,485.764 1226.34908,477.673 C1226.34908,469.582 1219.76708,463 1211.67608,463 Z M1211.67608,494.346 C1202.48308,494.346 1195.00308,486.867 1195.00308,477.673 C1195.00308,468.479 1202.48308,461 1211.67608,461 C1220.86908,461 1228.34908,468.479 1228.34908,477.673 C1228.34908,486.867 1220.86908,494.346 1211.67608,494.346 Z M1235.06278,524.4839 C1236.21978,522.9969 1236.62278,521.1169 1236.16778,519.3259 L1231.56978,501.1879 C1230.84678,498.3369 1228.15778,496.3459 1225.02978,496.3459 L1222.12978,496.3459 C1219.17478,498.7269 1215.47778,500.0339 1211.67578,500.0339 C1207.87578,500.0339 1204.17778,498.7269 1201.22278,496.3459 L1198.45178,496.3459 C1195.34278,496.3459 1192.65778,498.3209 1191.91978,501.1499 L1187.19378,519.2889 C1186.72578,521.0839 1187.12078,522.9709 1188.27678,524.4669 C1189.55678,526.1249 1191.54278,527.0749 1193.72478,527.0749 L1229.62778,527.0749 C1231.80078,527.0749 1233.78178,526.1299 1235.06278,524.4839 Z M1238.10778,518.8349 C1238.71378,521.2279 1238.17978,523.7349 1236.64178,525.7119 C1234.97878,527.8489 1232.42178,529.0749 1229.62778,529.0749 L1193.72478,529.0749 C1190.91878,529.0749 1188.35578,527.8409 1186.69378,525.6899 C1185.15678,523.6999 1184.63278,521.1839 1185.25778,518.7849 L1189.98478,500.6449 C1190.95178,496.9359 1194.43278,494.3459 1198.45178,494.3459 L1201.94678,494.3459 L1202.22578,494.5819 C1204.86678,496.8079 1208.22278,498.0339 1211.67578,498.0339 C1215.12978,498.0339 1218.48678,496.8079 1221.12678,494.5819 L1221.40678,494.3459 L1225.02978,494.3459 C1229.07478,494.3459 1232.56078,496.9579 1233.50878,500.6959 L1238.10778,518.8349 Z" transform="translate(-1185.000000, -461.000000)"></path>
+                        </svg>
+                        <span class="tw-text-sm tw-mt-3">Login</span>
+                    </a>
+                </li>
+                <!-- / Login -->
+                <!-- Whishlist -->
+                <li>
+                    <a href="https://www.gabrielny.com/favorites" class="tw-flex tw-flex-col tw-items-center tw-text-gray-900 tw-no-underline">
+                    <svg viewBox="0 0 65 57" width="20px" height="20px" aria-hidden="true" role="img">
+                        <path d="M1198.53752,353.017413 C1194.12249,353.017413 1189.96988,354.749363 1186.8469,357.894511 C1183.72393,361.040667 1182.00319,365.223774 1182.00319,369.671162 C1182.00319,374.119558 1183.72293,378.300648 1186.8469,381.445795 L1210.29624,405.061637 C1211.51418,406.287216 1213.49533,406.289233 1214.71428,405.061637 L1238.16462,381.444787 C1244.60888,374.953759 1244.60888,364.388564 1238.16361,357.894511 C1235.03764,354.749363 1230.88603,353.017413 1226.472,353.017413 C1222.05396,353.017413 1217.90135,354.749363 1214.77938,357.894511 L1212.50676,360.187301 L1210.23014,357.894511 C1207.10416,354.749363 1202.95155,353.017413 1198.53752,353.017413 M1212.50576,408 C1211.13558,408 1209.84853,407.463368 1208.87999,406.487949 L1185.43065,382.872107 C1181.92907,379.346677 1180,374.658208 1180,369.671162 C1180,364.684116 1181.92907,359.995647 1185.43065,356.468199 C1188.93222,352.94176 1193.58764,351 1198.53752,351 C1203.4864,351 1208.14181,352.94176 1211.64639,356.468199 L1212.50476,357.33367 L1213.36212,356.469208 C1216.8637,352.94176 1221.51811,351 1226.472,351 C1231.42088,351 1236.07629,352.94176 1239.58087,356.468199 C1246.80638,363.749044 1246.80638,375.594288 1239.58087,382.872107 L1239.57987,382.873115 L1216.13053,406.487949 C1215.16299,407.463368 1213.87494,408 1212.50576,408" transform="translate(-1180.000000, -351.000000)"></path>
+                    </svg>
+                    <span class="tw-text-sm tw-mt-3">Wishlist</span>
+                    </a>
+                </li>
+                <!-- / Whishlist -->
+                <!-- Contact -->
+                <li>
+                    <a href="https://www.gabrielny.com/contactus" class="tw-flex tw-flex-col tw-items-center tw-text-gray-900 tw-no-underline">
+                    <svg viewBox="0 0 29.731 29.731" width="20px" height="20px" xmlns="http://www.w3.org/2000/svg" >
+                    <g>
+                        <path d="M23.895,29.731c-1.237,0-2.731-0.31-4.374-0.93c-3.602-1.358-7.521-4.042-11.035-7.556 c-3.515-3.515-6.199-7.435-7.558-11.037C-0.307,6.933-0.31,4.245,0.921,3.015c0.177-0.177,0.357-0.367,0.543-0.563 c1.123-1.181,2.392-2.51,4.074-2.45C6.697,0.05,7.82,0.77,8.97,2.201c3.398,4.226,1.866,5.732,0.093,7.478l-0.313,0.31 c-0.29,0.29-0.838,1.633,4.26,6.731c1.664,1.664,3.083,2.882,4.217,3.619c0.714,0.464,1.991,1.166,2.515,0.642l0.315-0.318 c1.744-1.769,3.25-3.296,7.473,0.099c1.431,1.15,2.15,2.272,2.198,3.433c0.069,1.681-1.27,2.953-2.452,4.075 c-0.195,0.186-0.385,0.366-0.562,0.542C26.103,29.424,25.126,29.731,23.895,29.731z M5.418,1C4.223,1,3.144,2.136,2.189,3.141 C1.997,3.343,1.811,3.539,1.628,3.722C0.711,4.638,0.804,7.045,1.864,9.856c1.31,3.472,3.913,7.266,7.33,10.683 c3.416,3.415,7.208,6.018,10.681,7.327c2.811,1.062,5.218,1.152,6.133,0.237c0.183-0.183,0.379-0.369,0.581-0.56 c1.027-0.976,2.192-2.082,2.141-3.309c-0.035-0.843-0.649-1.75-1.825-2.695c-3.519-2.83-4.503-1.831-6.135-0.176l-0.32,0.323 c-0.78,0.781-2.047,0.608-3.767-0.51c-1.193-0.776-2.667-2.038-4.379-3.751c-4.231-4.23-5.584-6.819-4.26-8.146l0.319-0.315 c1.659-1.632,2.66-2.617-0.171-6.138C7.245,1.651,6.339,1.037,5.496,1.001C5.47,1,5.444,1,5.418,1z">
+                        </path>
+                    </g>
+                    </svg>
+                    <span class="tw-text-sm tw-mt-3">Contact</span>
+                    </a>
+                </li>
+                <!-- / Contact -->
+                <!-- Retailer -->
+                <li>
+                    <a href="https://b2b.gabrielny.com" class="tw-flex tw-flex-col tw-items-center tw-text-gray-900 tw-no-underline">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="15pt" viewBox="0 -29 512 512" width="15pt">
+                            <path d="m478.914062 312.195312c-4.144531 0-7.5 3.359376-7.5 7.5v119.570313h-154.59375v-141.941406c0-9.652344-7.851562-17.503907-17.5-17.503907h-86.640624c-9.648438 0-17.5 7.855469-17.5 17.503907v141.941406h-154.59375v-119.570313c0-4.140624-3.355469-7.5-7.5-7.5-4.144532 0-7.5 3.359376-7.5 7.5v123.070313c0 6.339844 5.160156 11.5 11.5 11.5h437.828124c6.339844 0 11.5-5.160156 11.5-11.5v-123.070313c0-4.140624-3.355468-7.5-7.5-7.5zm-268.734374 127.070313v-141.941406c0-1.378907 1.121093-2.503907 2.5-2.503907h86.640624c1.378907 0 2.5 1.125 2.5 2.503907v141.941406zm0 0"></path><path d="m443.285156 409.632812c8.804688 0 15.96875-7.164062 15.96875-15.96875v-81.84375c0-8.804687-7.164062-15.964843-15.96875-15.964843h-92.816406c-8.804688 0-15.96875 7.160156-15.96875 15.964843v81.84375c0 8.804688 7.164062 15.96875 15.96875 15.96875zm-93.785156-15.96875v-81.84375c0-.53125.433594-.964843.96875-.964843h92.816406c.535156 0 .96875.433593.96875.964843v81.84375c0 .535157-.433594.96875-.96875.96875h-92.816406c-.535156 0-.96875-.433593-.96875-.96875zm0 0"></path><path d="m161.53125 409.632812c8.804688 0 15.96875-7.164062 15.96875-15.96875v-81.84375c0-8.804687-7.164062-15.964843-15.96875-15.964843h-92.816406c-8.804688 0-15.96875 7.160156-15.96875 15.964843v81.84375c0 8.804688 7.164062 15.96875 15.96875 15.96875zm-93.785156-15.96875v-81.84375c0-.53125.433594-.964843.96875-.964843h92.816406c.535156 0 .96875.433593.96875.964843v81.84375c0 .535157-.433594.96875-.96875.96875h-92.816406c-.535156 0-.96875-.433593-.96875-.96875zm0 0"></path><path d="m489.960938 110.570312c0-8.011718 6.519531-14.527343 14.539062-14.527343 4.144531 0 7.5-3.359375 7.5-7.5v-18.351563c0-4.140625-3.355469-7.5-7.5-7.5h-123.808594c-4.144531 0-7.5 3.359375-7.5 7.5 0 4.144532 3.355469 7.5 7.5 7.5h116.308594v4.316406c-10.269531 2.695313-18.375 10.796876-21.074219 21.0625h-117.988281v-66.578124c0-20.121094-16.371094-36.492188-36.492188-36.492188h-130.886718c-20.125 0-36.492188 16.371094-36.492188 36.492188v26.199218h-146.566406c-4.144531 0-7.5 3.359375-7.5 7.5v18.351563c0 4.140625 3.355469 7.5 7.5 7.5 8.019531 0 14.539062 6.515625 14.539062 14.527343 0 2.707032 1.433594 5.078126 3.582032 6.398438v51.226562h-13.496094c-6.34375 0-11.503906 5.160157-11.503906 11.5v40.839844c0 6.339844 5.160156 11.5 11.503906 11.5h13.496094v57.714844c0 4.140625 3.355468 7.5 7.5 7.5 4.144531 0 7.5-3.359375 7.5-7.5v-57.714844h431.378906v57.726563c0 4.140625 3.355469 7.5 7.5 7.5 4.140625 0 7.5-3.359375 7.5-7.5v-57.726563h13.496094c6.34375 0 11.503906-5.160156 11.503906-11.5v-40.839844c0-6.339843-5.160156-11.5-11.503906-11.5h-13.496094v-51.652343c1.796875-1.371094 2.960938-3.535157 2.960938-5.972657zm-320.898438-74.078124c0-11.851563 9.644531-21.492188 21.492188-21.492188h130.886718c11.851563 0 21.492188 9.640625 21.492188 21.492188v81.832031c0 11.851562-9.640625 21.492187-21.492188 21.492187h-130.882812c-11.851563 0-21.492188-9.640625-21.492188-21.492187v-81.832031zm327.9375 180.542968h-481.378906v-33.839844h481.378906zm-456.378906-48.839844v-50.125h90.949218c4.144532 0 7.5-3.355468 7.5-7.5 0-4.140624-3.355468-7.5-7.5-7.5h-95.496093c-2.699219-10.265624-10.804688-18.367187-21.074219-21.0625v-4.316406h139.0625v40.636719c0 20.121094 16.371094 36.492187 36.492188 36.492187h130.886718c20.125 0 36.492188-16.371093 36.492188-36.492187v-.253906h114.0625v50.121093zm0 0"></path><path d="m227 359.542969h-6c-4.144531 0-7.5 3.359375-7.5 7.5s3.355469 7.5 7.5 7.5h6c4.144531 0 7.5-3.359375 7.5-7.5s-3.355469-7.5-7.5-7.5zm0 0"></path><path d="m202.277344 44.933594h9.191406l9.429688 45.078125c1.828124 8.734375 9.632812 15.078125 18.558593 15.078125h44.535157c7.839843 0 14.96875-4.929688 17.738281-12.261719l14.707031-38.933594c1.398438-3.707031.890625-7.863281-1.359375-11.117187-2.25-3.257813-5.960937-5.203125-9.917969-5.203125h-62.988281c-4.140625 0-7.5 3.355469-7.5 7.5 0 4.140625 3.359375 7.5 7.5 7.5h58.730469l-13.203125 34.953125c-.578125 1.53125-2.066407 2.5625-3.703125 2.5625h-44.539063c-1.863281 0-3.492187-1.328125-3.875-3.148438l-9.46875-45.253906c-1.425781-6.8125-7.507812-11.753906-14.46875-11.753906h-9.363281c-4.144531 0-7.5 3.355468-7.5 7.5 0 4.140625 3.355469 7.5 7.496094 7.5zm0 0"></path><path d="m240.75 111.382812h-2c-4.144531 0-7.5 3.355469-7.5 7.5 0 4.140626 3.355469 7.5 7.5 7.5h2c4.144531 0 7.5-3.359374 7.5-7.5 0-4.144531-3.355469-7.5-7.5-7.5zm0 0"></path><path d="m273.25 111.382812h-2c-4.144531 0-7.5 3.355469-7.5 7.5 0 4.140626 3.355469 7.5 7.5 7.5h2c4.144531 0 7.5-3.359374 7.5-7.5 0-4.144531-3.355469-7.5-7.5-7.5zm0 0"></path>
+                        </svg>
+                        <span class="tw-text-sm tw-mt-3">Retailer</span>
+                    </a>
+                </li>
+                <!-- / Retailer -->
+                <!-- Currency & ship -->
+                <li>
+                    <div class="dropdown tw-inline-block tw-relative">
+                    <button class="hover:tw-bg-transparent tw-bg-transparent hover:tw-border-0 tw-border-0 tw-p-0 tw-m-0 tw-w-10">
+                        <img src="https://cdn-images.gabrielny.com/is/image/GabrielCo/us_flag?scl=1">
+                    </button>
+                    <div class="dropdown-menu tw-absolute tw-hidden tw-text-gray-700 tw-transition-all tw-ease-in-out tw-duration-75 tw-z-20" style="right:50px">
+                        <ul class="tw-bg-white tw-rounded-lg tw-shadow-2xl tw-px-10 tw-pt-6 tw-pb-3 tw-list-none tw-w-64 tw-min-w-full">
+                        <li class="tw-border-0 tw-border-b tw-border-gray-300 tw-border-solid tw-pb-5 tw-pt-3">
+                            <div class="tw-text-sm tw-text-gray-500">How would you like to shop?</div>
+                        </li>
+                        <!-- Shipping -->
+                        <li class="tw-py-2 tw-border-0 tw-border-b tw-border-gray-300 tw-border-solid">
+                            <div class="tw-flex tw-justify-between tw-items-center">
+                            <div class="tw-flex tw-justify-center tw-items-center">
+                                <svg class="tw-mr-4" width="14px" height="19px" aria-hidden="true" role="img">
+                                <use href="#svg_location" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg_location"></use>
+                                </svg>
+                                <span class="tw-text-tiny">Ship to</span>
+                            </div>
+                            <a href="JavaScript:void(0);" class="tw-text-sm tw-text-gray-500" data-country-short-code="US" data-country-name="United States">
+                                United States
+                            </a>
+                            </div>
+
+                            <ul class="tw-m-0 tw-mt-6 tw-mb-2 tw-list-none tw-p-0 tw-text-sm tw-text-gray-500">
+                            <li class="tw-m-0 tw-mt-6 tw-mb-2 tw-text-left">
+                                <a href="JavaScript:void(0);" data-country-short-code="US" data-country-name="United States" data-default-curr="USD">
+                                United States
+                                </a>
+                            </li>
+                            <li class="tw-text-left">
+                                <a href="https://www.gabrielny.ca/" data-country-short-code="CA" data-country-name="Canada" data-default-curr="CAD">
+                                Canada
+                                </a>
+                            </li>
+                            </ul>
+
+                        </li>
+                        <!-- END: Shipping -->
+                        <!-- Currency -->
+                        <li class="tw-pt-2">
+                            <div class="tw-flex tw-justify-between tw-items-center">
+                            <div class="tw-flex tw-justify-center tw-items-center">
+                                <svg class="tw-mr-4" width="20px" height="12px" aria-hidden="true" role="img">
+                                <use href="#svg_money" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg_money"></use>
+                                </svg>
+                                <span class="tw-text-tiny">Currency</span>
+                            </div>
+                            <a href="JavaScript:void(0);" class="tw-text-sm tw-text-gray-500" data-curr-short-code="USD" data-curr-name="US Dollar">
+                                US Dollar (USD)
+                            </a>
+                            </div>
+
+                            <ul class="tw-m-0 tw-mt-6 tw-mb-2 tw-list-none tw-p-0 tw-text-sm tw-text-gray-500">
+                            <li class="tw-m-0 tw-mt-6 tw-mb-2 tw-text-left">
+                                <a href="?currency=USD">
+                                US Dollar
+                                </a>
+                            </li>
+                            <li class="tw-text-left">
+                                <a href="https://www.gabrielny.ca/">
+                                Canadian Dollar
+                                </a>
+                            </li>
+                            </ul>
+                        </li>
+                        <!-- END: Currency -->
+                        </ul>
+                    </div>
+                    </div>
+                </li>
+                <!-- / Currency & ship -->
+                </ul>
+                <!-- END: Mobile links -->
+            </div>
+            
+            <nav data-action="navigation" class="tw-order-1">
+                <ul class="tw-list-none tw-flex tw-justify-center tw-m-0 tw-font-sans sm:tw-flex-row tw-flex-col tw-p-0">
+                <!-- Engagement -->
+                <li class="tw-inline-block tw-m-0 tw-px-8 nav-item">
+                    <div class="nav-a tw-flex tw-justify-between tw-w-full tw-items-center sm:tw-block accordion">
+                    <a class="tw-no-underline tw-text-gray-900" href="/engagement-ring">
+                        <span class="tw-text-xl sm:tw-text-base">Engagement</span>
+                    </a>
+                    <span class="tw-text-4xl tw-font-sans sm:tw-hidden">+</span>
+                    </div>
+                </li>
+                <!-- END: Engagement -->
+                <!-- Weddings -->
+                <li class="tw-inline-block tw-m-0 tw-px-8 nav-item">
+                    <div class="nav-a tw-flex tw-justify-between tw-w-full tw-items-center sm:tw-block accordion">
+                    <a class="tw-no-underline tw-text-gray-900" href="/wedding-band">
+                        <span class="tw-text-xl sm:tw-text-base">Wedding</span>
+                    </a>
+                    <span class="tw-text-4xl tw-font-sans sm:tw-hidden">+</span>
+                    </div>
+                </li>
+                <!-- END: Weddings -->
+                <!-- Necklaces -->
+                <li class="tw-inline-block tw-m-0 tw-px-8 nav-item">
+                    <div class="nav-a tw-flex tw-justify-between tw-w-full tw-items-center sm:tw-block accordion">
+                    <a class="tw-no-underline tw-text-gray-900" href="/necklace">
+                        <span class="tw-text-xl sm:tw-text-base">Necklaces</span>
+                    </a>
+                    <span class="tw-text-4xl tw-font-sans sm:tw-hidden">+</span>
+                    </div>
+                </li>
+                <!-- END: Necklaces -->
+                <!-- Rings -->
+                <li class="tw-inline-block tw-m-0 tw-px-8 nav-item">
+                    <div class="nav-a tw-flex tw-justify-between tw-w-full tw-items-center sm:tw-block accordion">
+                    <a class="tw-no-underline tw-text-gray-900" href="/rings">
+                        <span class="tw-text-xl sm:tw-text-base">Rings</span>
+                    </a>
+                    <span class="tw-text-4xl tw-font-sans sm:tw-hidden">+</span>
+                    </div>
+                </li>
+                <!-- END: Rings -->
+                <!-- Earrings -->
+                <li class="tw-inline-block tw-m-0 tw-px-8 nav-item">
+                    <div class="nav-a tw-flex tw-justify-between tw-w-full tw-items-center sm:tw-block accordion">
+                    <a class="tw-no-underline tw-text-gray-900" href="/earrings">
+                        <span class="tw-text-xl sm:tw-text-base">Earrings</span>
+                    </a>
+                    <span class="tw-text-4xl tw-font-sans sm:tw-hidden">+</span>
+                    </div>
+                </li>
+                <!-- END: Earrings -->
+                <!-- Bracelets -->
+                <li class="tw-inline-block tw-m-0 tw-px-8 nav-item">
+                    <div class="nav-a tw-flex tw-justify-between tw-w-full tw-items-center sm:tw-block accordion">
+                    <a class="tw-no-underline tw-text-gray-900" href="/bracelet">
+                        <span class="tw-text-xl sm:tw-text-base">Bracelets</span>
+                    </a>
+                    <span class="tw-text-4xl tw-font-sans sm:tw-hidden">+</span>
+                    </div>
+                </li>
+                <!-- END: Bracelets -->
+                <!-- Gifts -->
+                <li class="tw-inline-block tw-m-0 tw-px-8 nav-item">
+                    <div class="nav-a tw-flex tw-justify-between tw-w-full tw-items-center sm:tw-block accordion">
+                    <a class="tw-no-underline tw-text-gray-900" href="/gift">
+                        <span class="tw-text-xl sm:tw-text-base">Gifts</span>
+                    </a>
+                    <span class="tw-text-4xl tw-font-sans sm:tw-hidden">+</span>
+                    </div>           
+                </li>
+                <!-- END: Gifts -->
+                <!-- About -->
+                <li class="tw-inline-block tw-m-0 tw-px-8 nav-item">
+                    <div class="nav-a tw-flex tw-justify-between tw-w-full tw-items-center sm:tw-block accordion">
+                    <a class="tw-no-underline tw-text-gray-900" href="/about">
+                        <span class="tw-text-xl sm:tw-text-base">About</span>
+                    </a>
+                    <span class="tw-text-4xl tw-font-sans sm:tw-hidden">+</span>
+                    </div>            
+                </li>
+                <!-- END: About -->
+                </ul>
+            </nav>
+            
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <!-- Code BTN -->
+    <button v-on:click="open = !open" class="mdl-button mdl-js-button mdl-js-ripple-effect tw-my-4 tw-text-sm focus:tw-outline-none">Show Code</button>
+    <!-- Code -->
+    <pre v-show="open" class="tw-m-0">
+        <code class="html">
+            &lt;div class="sm:tw-mt-16 navigation__wrapper">
+            &lt;!-- Close navigation -->
+            &lt;a href="javascript:void(0)" class="navigation__close" aria-label="Close">
+                &lt;svg class="svg-close" width="20px" height="20px" aria-hidden="true" role="img">
+                &lt;use href="#svg-close" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-close">&lt;/use>
+                &lt;/svg>
+            &lt;/a>
+            &lt;!-- END: Close navigation -->
+            &lt;div class="container">
+                &lt;div class="navigation__wrapper--mobile tw-flex tw-flex-col">
+                &lt;!-- Zipcode search -->
+                &lt;div class="tw-my-10 tw-px-8 tw-block sm:tw-hidden">
+                    &lt;h1 class="tw-font-sans tw-text-base tw-m-0 tw-mb-2">Find A Store Near You&lt;/h1>
+                    &lt;form method="post" action="https://gabrieldev.smartagehosting.com/storelocator/results/" id="actionForm" novalidate="novalidate" class="tw-flex tw-flex-row tw-items-center">
+                    &lt;input placeholder="Zipcode" id="zip" name="zip" required="" type="text" value="" class="zicode-input tw-py-4 tw-px-3 tw-w-full">
+                    &lt;button id="btnResults1" class="tw-bg-gray-900 tw-border tw-border-solid tw-border-gray-900 tw-font-sans tw-w-1/4 tw-h-16 tw-tracking-wider tw-ml-0 tw-text-white tw-px-4">Find&lt;/button>
+                    &lt;/form>
+                &lt;/div>
+                &lt;!-- / Zipcode search -->
+                &lt;div class="tw-flex tw-justify-between tw-items-center tw-order-2 tw-border-b tw-border-gray-100">
+                    &lt;!-- Mobile links -->
+                    &lt;ul class="tw-order-3 tw-list-none tw-flex tw-justify-around tw-items-center tw-px-2 tw-py-10 tw-w-full tw-border-b-0 tw-border-t tw-border-r-0 tw-border-l-0 tw-border-solid tw-border-gray-600 tw-mt-12 sm:tw-hidden">
+                    &lt;!-- Login -->
+                    &lt;li>
+                        &lt;a href="https://www.gabrielny.com/login" title="User Login" class="tw-flex tw-flex-col tw-items-center  tw-text-gray-900 tw-no-underline">
+                            &lt;svg class="svg-user" width="20px" height="20px" aria-hidden="true" role="img" viewBox="0 0 54 69">
+                                &lt;path d="M1211.67608,463 C1203.58508,463 1197.00308,469.582 1197.00308,477.673 C1197.00308,485.764 1203.58508,492.346 1211.67608,492.346 C1219.76708,492.346 1226.34908,485.764 1226.34908,477.673 C1226.34908,469.582 1219.76708,463 1211.67608,463 Z M1211.67608,494.346 C1202.48308,494.346 1195.00308,486.867 1195.00308,477.673 C1195.00308,468.479 1202.48308,461 1211.67608,461 C1220.86908,461 1228.34908,468.479 1228.34908,477.673 C1228.34908,486.867 1220.86908,494.346 1211.67608,494.346 Z M1235.06278,524.4839 C1236.21978,522.9969 1236.62278,521.1169 1236.16778,519.3259 L1231.56978,501.1879 C1230.84678,498.3369 1228.15778,496.3459 1225.02978,496.3459 L1222.12978,496.3459 C1219.17478,498.7269 1215.47778,500.0339 1211.67578,500.0339 C1207.87578,500.0339 1204.17778,498.7269 1201.22278,496.3459 L1198.45178,496.3459 C1195.34278,496.3459 1192.65778,498.3209 1191.91978,501.1499 L1187.19378,519.2889 C1186.72578,521.0839 1187.12078,522.9709 1188.27678,524.4669 C1189.55678,526.1249 1191.54278,527.0749 1193.72478,527.0749 L1229.62778,527.0749 C1231.80078,527.0749 1233.78178,526.1299 1235.06278,524.4839 Z M1238.10778,518.8349 C1238.71378,521.2279 1238.17978,523.7349 1236.64178,525.7119 C1234.97878,527.8489 1232.42178,529.0749 1229.62778,529.0749 L1193.72478,529.0749 C1190.91878,529.0749 1188.35578,527.8409 1186.69378,525.6899 C1185.15678,523.6999 1184.63278,521.1839 1185.25778,518.7849 L1189.98478,500.6449 C1190.95178,496.9359 1194.43278,494.3459 1198.45178,494.3459 L1201.94678,494.3459 L1202.22578,494.5819 C1204.86678,496.8079 1208.22278,498.0339 1211.67578,498.0339 C1215.12978,498.0339 1218.48678,496.8079 1221.12678,494.5819 L1221.40678,494.3459 L1225.02978,494.3459 C1229.07478,494.3459 1232.56078,496.9579 1233.50878,500.6959 L1238.10778,518.8349 Z" transform="translate(-1185.000000, -461.000000)">&lt;/path>
+                            &lt;/svg>
+                            &lt;span class="tw-text-sm tw-mt-3">Login&lt;/span>
+                        &lt;/a>
+                    &lt;/li>
+                    &lt;!-- / Login -->
+                    &lt;!-- Whishlist -->
+                    &lt;li>
+                        &lt;a href="https://www.gabrielny.com/favorites" class="tw-flex tw-flex-col tw-items-center tw-text-gray-900 tw-no-underline">
+                        &lt;svg viewBox="0 0 65 57" width="20px" height="20px" aria-hidden="true" role="img">
+                            &lt;path d="M1198.53752,353.017413 C1194.12249,353.017413 1189.96988,354.749363 1186.8469,357.894511 C1183.72393,361.040667 1182.00319,365.223774 1182.00319,369.671162 C1182.00319,374.119558 1183.72293,378.300648 1186.8469,381.445795 L1210.29624,405.061637 C1211.51418,406.287216 1213.49533,406.289233 1214.71428,405.061637 L1238.16462,381.444787 C1244.60888,374.953759 1244.60888,364.388564 1238.16361,357.894511 C1235.03764,354.749363 1230.88603,353.017413 1226.472,353.017413 C1222.05396,353.017413 1217.90135,354.749363 1214.77938,357.894511 L1212.50676,360.187301 L1210.23014,357.894511 C1207.10416,354.749363 1202.95155,353.017413 1198.53752,353.017413 M1212.50576,408 C1211.13558,408 1209.84853,407.463368 1208.87999,406.487949 L1185.43065,382.872107 C1181.92907,379.346677 1180,374.658208 1180,369.671162 C1180,364.684116 1181.92907,359.995647 1185.43065,356.468199 C1188.93222,352.94176 1193.58764,351 1198.53752,351 C1203.4864,351 1208.14181,352.94176 1211.64639,356.468199 L1212.50476,357.33367 L1213.36212,356.469208 C1216.8637,352.94176 1221.51811,351 1226.472,351 C1231.42088,351 1236.07629,352.94176 1239.58087,356.468199 C1246.80638,363.749044 1246.80638,375.594288 1239.58087,382.872107 L1239.57987,382.873115 L1216.13053,406.487949 C1215.16299,407.463368 1213.87494,408 1212.50576,408" transform="translate(-1180.000000, -351.000000)">&lt;/path>
+                        &lt;/svg>
+                        &lt;span class="tw-text-sm tw-mt-3">Wishlist&lt;/span>
+                        &lt;/a>
+                    &lt;/li>
+                    &lt;!-- / Whishlist -->
+                    &lt;!-- Contact -->
+                    &lt;li>
+                        &lt;a href="https://www.gabrielny.com/contactus" class="tw-flex tw-flex-col tw-items-center tw-text-gray-900 tw-no-underline">
+                        &lt;svg viewBox="0 0 29.731 29.731" width="20px" height="20px" xmlns="http://www.w3.org/2000/svg" >
+                        &lt;g>
+                            &lt;path d="M23.895,29.731c-1.237,0-2.731-0.31-4.374-0.93c-3.602-1.358-7.521-4.042-11.035-7.556 c-3.515-3.515-6.199-7.435-7.558-11.037C-0.307,6.933-0.31,4.245,0.921,3.015c0.177-0.177,0.357-0.367,0.543-0.563 c1.123-1.181,2.392-2.51,4.074-2.45C6.697,0.05,7.82,0.77,8.97,2.201c3.398,4.226,1.866,5.732,0.093,7.478l-0.313,0.31 c-0.29,0.29-0.838,1.633,4.26,6.731c1.664,1.664,3.083,2.882,4.217,3.619c0.714,0.464,1.991,1.166,2.515,0.642l0.315-0.318 c1.744-1.769,3.25-3.296,7.473,0.099c1.431,1.15,2.15,2.272,2.198,3.433c0.069,1.681-1.27,2.953-2.452,4.075 c-0.195,0.186-0.385,0.366-0.562,0.542C26.103,29.424,25.126,29.731,23.895,29.731z M5.418,1C4.223,1,3.144,2.136,2.189,3.141 C1.997,3.343,1.811,3.539,1.628,3.722C0.711,4.638,0.804,7.045,1.864,9.856c1.31,3.472,3.913,7.266,7.33,10.683 c3.416,3.415,7.208,6.018,10.681,7.327c2.811,1.062,5.218,1.152,6.133,0.237c0.183-0.183,0.379-0.369,0.581-0.56 c1.027-0.976,2.192-2.082,2.141-3.309c-0.035-0.843-0.649-1.75-1.825-2.695c-3.519-2.83-4.503-1.831-6.135-0.176l-0.32,0.323 c-0.78,0.781-2.047,0.608-3.767-0.51c-1.193-0.776-2.667-2.038-4.379-3.751c-4.231-4.23-5.584-6.819-4.26-8.146l0.319-0.315 c1.659-1.632,2.66-2.617-0.171-6.138C7.245,1.651,6.339,1.037,5.496,1.001C5.47,1,5.444,1,5.418,1z">
+                            &lt;/path>
+                        &lt;/g>
+                        &lt;/svg>
+                        &lt;span class="tw-text-sm tw-mt-3">Contact&lt;/span>
+                        &lt;/a>
+                    &lt;/li>
+                    &lt;!-- / Contact -->
+                    &lt;!-- Retailer -->
+                    &lt;li>
+                        &lt;a href="https://b2b.gabrielny.com" class="tw-flex tw-flex-col tw-items-center tw-text-gray-900 tw-no-underline">
+                        &lt;svg xmlns="http://www.w3.org/2000/svg" height="15pt" viewBox="0 -29 512 512" width="15pt">
+                                &lt;path d="m478.914062 312.195312c-4.144531 0-7.5 3.359376-7.5 7.5v119.570313h-154.59375v-141.941406c0-9.652344-7.851562-17.503907-17.5-17.503907h-86.640624c-9.648438 0-17.5 7.855469-17.5 17.503907v141.941406h-154.59375v-119.570313c0-4.140624-3.355469-7.5-7.5-7.5-4.144532 0-7.5 3.359376-7.5 7.5v123.070313c0 6.339844 5.160156 11.5 11.5 11.5h437.828124c6.339844 0 11.5-5.160156 11.5-11.5v-123.070313c0-4.140624-3.355468-7.5-7.5-7.5zm-268.734374 127.070313v-141.941406c0-1.378907 1.121093-2.503907 2.5-2.503907h86.640624c1.378907 0 2.5 1.125 2.5 2.503907v141.941406zm0 0">&lt;/path>&lt;path d="m443.285156 409.632812c8.804688 0 15.96875-7.164062 15.96875-15.96875v-81.84375c0-8.804687-7.164062-15.964843-15.96875-15.964843h-92.816406c-8.804688 0-15.96875 7.160156-15.96875 15.964843v81.84375c0 8.804688 7.164062 15.96875 15.96875 15.96875zm-93.785156-15.96875v-81.84375c0-.53125.433594-.964843.96875-.964843h92.816406c.535156 0 .96875.433593.96875.964843v81.84375c0 .535157-.433594.96875-.96875.96875h-92.816406c-.535156 0-.96875-.433593-.96875-.96875zm0 0">&lt;/path>&lt;path d="m161.53125 409.632812c8.804688 0 15.96875-7.164062 15.96875-15.96875v-81.84375c0-8.804687-7.164062-15.964843-15.96875-15.964843h-92.816406c-8.804688 0-15.96875 7.160156-15.96875 15.964843v81.84375c0 8.804688 7.164062 15.96875 15.96875 15.96875zm-93.785156-15.96875v-81.84375c0-.53125.433594-.964843.96875-.964843h92.816406c.535156 0 .96875.433593.96875.964843v81.84375c0 .535157-.433594.96875-.96875.96875h-92.816406c-.535156 0-.96875-.433593-.96875-.96875zm0 0">&lt;/path>&lt;path d="m489.960938 110.570312c0-8.011718 6.519531-14.527343 14.539062-14.527343 4.144531 0 7.5-3.359375 7.5-7.5v-18.351563c0-4.140625-3.355469-7.5-7.5-7.5h-123.808594c-4.144531 0-7.5 3.359375-7.5 7.5 0 4.144532 3.355469 7.5 7.5 7.5h116.308594v4.316406c-10.269531 2.695313-18.375 10.796876-21.074219 21.0625h-117.988281v-66.578124c0-20.121094-16.371094-36.492188-36.492188-36.492188h-130.886718c-20.125 0-36.492188 16.371094-36.492188 36.492188v26.199218h-146.566406c-4.144531 0-7.5 3.359375-7.5 7.5v18.351563c0 4.140625 3.355469 7.5 7.5 7.5 8.019531 0 14.539062 6.515625 14.539062 14.527343 0 2.707032 1.433594 5.078126 3.582032 6.398438v51.226562h-13.496094c-6.34375 0-11.503906 5.160157-11.503906 11.5v40.839844c0 6.339844 5.160156 11.5 11.503906 11.5h13.496094v57.714844c0 4.140625 3.355468 7.5 7.5 7.5 4.144531 0 7.5-3.359375 7.5-7.5v-57.714844h431.378906v57.726563c0 4.140625 3.355469 7.5 7.5 7.5 4.140625 0 7.5-3.359375 7.5-7.5v-57.726563h13.496094c6.34375 0 11.503906-5.160156 11.503906-11.5v-40.839844c0-6.339843-5.160156-11.5-11.503906-11.5h-13.496094v-51.652343c1.796875-1.371094 2.960938-3.535157 2.960938-5.972657zm-320.898438-74.078124c0-11.851563 9.644531-21.492188 21.492188-21.492188h130.886718c11.851563 0 21.492188 9.640625 21.492188 21.492188v81.832031c0 11.851562-9.640625 21.492187-21.492188 21.492187h-130.882812c-11.851563 0-21.492188-9.640625-21.492188-21.492187v-81.832031zm327.9375 180.542968h-481.378906v-33.839844h481.378906zm-456.378906-48.839844v-50.125h90.949218c4.144532 0 7.5-3.355468 7.5-7.5 0-4.140624-3.355468-7.5-7.5-7.5h-95.496093c-2.699219-10.265624-10.804688-18.367187-21.074219-21.0625v-4.316406h139.0625v40.636719c0 20.121094 16.371094 36.492187 36.492188 36.492187h130.886718c20.125 0 36.492188-16.371093 36.492188-36.492187v-.253906h114.0625v50.121093zm0 0">&lt;/path>&lt;path d="m227 359.542969h-6c-4.144531 0-7.5 3.359375-7.5 7.5s3.355469 7.5 7.5 7.5h6c4.144531 0 7.5-3.359375 7.5-7.5s-3.355469-7.5-7.5-7.5zm0 0">&lt;/path>&lt;path d="m202.277344 44.933594h9.191406l9.429688 45.078125c1.828124 8.734375 9.632812 15.078125 18.558593 15.078125h44.535157c7.839843 0 14.96875-4.929688 17.738281-12.261719l14.707031-38.933594c1.398438-3.707031.890625-7.863281-1.359375-11.117187-2.25-3.257813-5.960937-5.203125-9.917969-5.203125h-62.988281c-4.140625 0-7.5 3.355469-7.5 7.5 0 4.140625 3.359375 7.5 7.5 7.5h58.730469l-13.203125 34.953125c-.578125 1.53125-2.066407 2.5625-3.703125 2.5625h-44.539063c-1.863281 0-3.492187-1.328125-3.875-3.148438l-9.46875-45.253906c-1.425781-6.8125-7.507812-11.753906-14.46875-11.753906h-9.363281c-4.144531 0-7.5 3.355468-7.5 7.5 0 4.140625 3.355469 7.5 7.496094 7.5zm0 0">&lt;/path>&lt;path d="m240.75 111.382812h-2c-4.144531 0-7.5 3.355469-7.5 7.5 0 4.140626 3.355469 7.5 7.5 7.5h2c4.144531 0 7.5-3.359374 7.5-7.5 0-4.144531-3.355469-7.5-7.5-7.5zm0 0">&lt;/path>&lt;path d="m273.25 111.382812h-2c-4.144531 0-7.5 3.355469-7.5 7.5 0 4.140626 3.355469 7.5 7.5 7.5h2c4.144531 0 7.5-3.359374 7.5-7.5 0-4.144531-3.355469-7.5-7.5-7.5zm0 0">&lt;/path>
+                            &lt;/svg>
+                            &lt;span class="tw-text-sm tw-mt-3">Retailer&lt;/span>
+                        &lt;/a>
+                    &lt;/li>
+                    &lt;!-- / Retailer -->
+                    &lt;!-- Currency & ship -->
+                    &lt;li>
+                        &lt;div class="dropdown tw-inline-block tw-relative">
+                        &lt;button class="hover:tw-bg-transparent tw-bg-transparent hover:tw-border-0 tw-border-0 tw-p-0 tw-m-0 tw-w-10">
+                            &lt;img src="https://cdn-images.gabrielny.com/is/image/GabrielCo/us_flag?scl=1">
+                        &lt;/button>
+                        &lt;div class="dropdown-menu tw-absolute tw-hidden tw-text-gray-700 tw-transition-all tw-ease-in-out tw-duration-75 tw-z-20" style="right:50px">
+                            &lt;ul class="tw-bg-white tw-rounded-lg tw-shadow-2xl tw-px-10 tw-pt-6 tw-pb-3 tw-list-none tw-w-64 tw-min-w-full">
+                            &lt;li class="tw-border-0 tw-border-b tw-border-gray-300 tw-border-solid tw-pb-5 tw-pt-3">
+                                &lt;div class="tw-text-sm tw-text-gray-500">How would you like to shop?&lt;/div>
+                            &lt;/li>
+                            &lt;!-- Shipping -->
+                            &lt;li class="tw-py-2 tw-border-0 tw-border-b tw-border-gray-300 tw-border-solid">
+                                &lt;div class="tw-flex tw-justify-between tw-items-center">
+                                &lt;div class="tw-flex tw-justify-center tw-items-center">
+                                    &lt;svg class="tw-mr-4" width="14px" height="19px" aria-hidden="true" role="img">
+                                    &lt;use href="#svg_location" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg_location">&lt;/use>
+                                    &lt;/svg>
+                                    &lt;span class="tw-text-tiny">Ship to&lt;/span>
+                                &lt;/div>
+                                &lt;a href="JavaScript:void(0);" class="tw-text-sm tw-text-gray-500" data-country-short-code="US" data-country-name="United States">
+                                    United States
+                                &lt;/a>
+                                &lt;/div>
+                                &lt;ul class="tw-m-0 tw-mt-6 tw-mb-2 tw-list-none tw-p-0 tw-text-sm tw-text-gray-500">
+                                &lt;li class="tw-m-0 tw-mt-6 tw-mb-2 tw-text-left">
+                                    &lt;a href="JavaScript:void(0);" data-country-short-code="US" data-country-name="United States" data-default-curr="USD">
+                                    United States
+                                    &lt;/a>
+                                &lt;/li>
+                                &lt;li class="tw-text-left">
+                                    &lt;a href="https://www.gabrielny.ca/" data-country-short-code="CA" data-country-name="Canada" data-default-curr="CAD">
+                                    Canada
+                                    &lt;/a>
+                                &lt;/li>
+                                &lt;/ul>
+
+                            &lt;/li>
+                            &lt;!-- END: Shipping -->
+                            &lt;!-- Currency -->
+                            &lt;li class="tw-pt-2">
+                                &lt;div class="tw-flex tw-justify-between tw-items-center">
+                                &lt;div class="tw-flex tw-justify-center tw-items-center">
+                                    &lt;svg class="tw-mr-4" width="20px" height="12px" aria-hidden="true" role="img">
+                                    &lt;use href="#svg_money" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg_money">&lt;/use>
+                                    &lt;/svg>
+                                    &lt;span class="tw-text-tiny">Currency&lt;/span>
+                                &lt;/div>
+                                &lt;a href="JavaScript:void(0);" class="tw-text-sm tw-text-gray-500" data-curr-short-code="USD" data-curr-name="US Dollar">
+                                    US Dollar (USD)
+                                &lt;/a>
+                                &lt;/div>
+                                &lt;ul class="tw-m-0 tw-mt-6 tw-mb-2 tw-list-none tw-p-0 tw-text-sm tw-text-gray-500">
+                                &lt;li class="tw-m-0 tw-mt-6 tw-mb-2 tw-text-left">
+                                    &lt;a href="?currency=USD">
+                                    US Dollar
+                                    &lt;/a>
+                                &lt;/li>
+                                &lt;li class="tw-text-left">
+                                    &lt;a href="https://www.gabrielny.ca/">
+                                    Canadian Dollar
+                                    &lt;/a>
+                                &lt;/li>
+                                &lt;/ul>
+                            &lt;/li>
+                            &lt;!-- END: Currency -->
+                            &lt;/ul>
+                        &lt;/div>
+                        &lt;/div>
+                    &lt;/li>
+                    &lt;!-- / Currency & ship -->
+                    &lt;/ul>
+                    &lt;!-- END: Mobile links -->
+                &lt;/div>
+                
+                &lt;nav data-action="navigation" class="tw-order-1">
+                    &lt;ul class="tw-list-none tw-flex tw-justify-center tw-m-0 tw-font-sans sm:tw-flex-row tw-flex-col tw-p-0">
+                    &lt;!-- Engagement -->
+                    &lt;li class="tw-inline-block tw-m-0 tw-px-8 nav-item">
+                        &lt;div class="nav-a tw-flex tw-justify-between tw-w-full tw-items-center sm:tw-block accordion">
+                        &lt;a class="tw-no-underline tw-text-gray-900" href="/engagement-ring">
+                            &lt;span class="tw-text-xl sm:tw-text-base">Engagement&lt;/span>
+                        &lt;/a>
+                        &lt;span class="tw-text-4xl tw-font-sans sm:tw-hidden">+&lt;/span>
+                        &lt;/div>
+                    &lt;/li>
+                    &lt;!-- END: Engagement -->
+                    &lt;!-- Weddings -->
+                    &lt;li class="tw-inline-block tw-m-0 tw-px-8 nav-item">
+                        &lt;div class="nav-a tw-flex tw-justify-between tw-w-full tw-items-center sm:tw-block accordion">
+                        &lt;a class="tw-no-underline tw-text-gray-900" href="/wedding-band">
+                            &lt;span class="tw-text-xl sm:tw-text-base">Wedding&lt;/span>
+                        &lt;/a>
+                        &lt;span class="tw-text-4xl tw-font-sans sm:tw-hidden">+&lt;/span>
+                        &lt;/div>
+                    &lt;/li>
+                    &lt;!-- END: Weddings -->
+                    &lt;!-- Necklaces -->
+                    &lt;li class="tw-inline-block tw-m-0 tw-px-8 nav-item">
+                        &lt;div class="nav-a tw-flex tw-justify-between tw-w-full tw-items-center sm:tw-block accordion">
+                        &lt;a class="tw-no-underline tw-text-gray-900" href="/necklace">
+                            &lt;span class="tw-text-xl sm:tw-text-base">Necklaces&lt;/span>
+                        &lt;/a>
+                        &lt;span class="tw-text-4xl tw-font-sans sm:tw-hidden">+&lt;/span>
+                        &lt;/div>
+                    &lt;/li>
+                    &lt;!-- END: Necklaces -->
+                    &lt;!-- Rings -->
+                    &lt;li class="tw-inline-block tw-m-0 tw-px-8 nav-item">
+                        &lt;div class="nav-a tw-flex tw-justify-between tw-w-full tw-items-center sm:tw-block accordion">
+                        &lt;a class="tw-no-underline tw-text-gray-900" href="/rings">
+                            &lt;span class="tw-text-xl sm:tw-text-base">Rings&lt;/span>
+                        &lt;/a>
+                        &lt;span class="tw-text-4xl tw-font-sans sm:tw-hidden">+&lt;/span>
+                        &lt;/div>
+                    &lt;/li>
+                    &lt;!-- END: Rings -->
+                    &lt;!-- Earrings -->
+                    &lt;li class="tw-inline-block tw-m-0 tw-px-8 nav-item">
+                        &lt;div class="nav-a tw-flex tw-justify-between tw-w-full tw-items-center sm:tw-block accordion">
+                        &lt;a class="tw-no-underline tw-text-gray-900" href="/earrings">
+                            &lt;span class="tw-text-xl sm:tw-text-base">Earrings&lt;/span>
+                        &lt;/a>
+                        &lt;span class="tw-text-4xl tw-font-sans sm:tw-hidden">+&lt;/span>
+                        &lt;/div>
+                    &lt;/li>
+                    &lt;!-- END: Earrings -->
+                    &lt;!-- Bracelets -->
+                    &lt;li class="tw-inline-block tw-m-0 tw-px-8 nav-item">
+                        &lt;div class="nav-a tw-flex tw-justify-between tw-w-full tw-items-center sm:tw-block accordion">
+                        &lt;a class="tw-no-underline tw-text-gray-900" href="/bracelet">
+                            &lt;span class="tw-text-xl sm:tw-text-base">Bracelets&lt;/span>
+                        &lt;/a>
+                        &lt;span class="tw-text-4xl tw-font-sans sm:tw-hidden">+&lt;/span>
+                        &lt;/div>
+                    &lt;/li>
+                    &lt;!-- END: Bracelets -->
+                    &lt;!-- Gifts -->
+                    &lt;li class="tw-inline-block tw-m-0 tw-px-8 nav-item">
+                        &lt;div class="nav-a tw-flex tw-justify-between tw-w-full tw-items-center sm:tw-block accordion">
+                        &lt;a class="tw-no-underline tw-text-gray-900" href="/gift">
+                            &lt;span class="tw-text-xl sm:tw-text-base">Gifts&lt;/span>
+                        &lt;/a>
+                        &lt;span class="tw-text-4xl tw-font-sans sm:tw-hidden">+&lt;/span>
+                        &lt;/div>           
+                    &lt;/li>
+                    &lt;!-- END: Gifts -->
+                    &lt;!-- About -->
+                    &lt;li class="tw-inline-block tw-m-0 tw-px-8 nav-item">
+                        &lt;div class="nav-a tw-flex tw-justify-between tw-w-full tw-items-center sm:tw-block accordion">
+                        &lt;a class="tw-no-underline tw-text-gray-900" href="/about">
+                            &lt;span class="tw-text-xl sm:tw-text-base">About&lt;/span>
+                        &lt;/a>
+                        &lt;span class="tw-text-4xl tw-font-sans sm:tw-hidden">+&lt;/span>
+                        &lt;/div>            
+                    &lt;/li>
+                    &lt;!-- END: About -->
+                    &lt;/ul>
+                &lt;/nav>
+                
+                &lt;/div>
+            &lt;/div>
+            &lt;/div>
+        </code>
+    </pre>
+
+</section>
+</template>
+
+<script>
+export default {
+  name: 'Headerbottom',
+    data () {
+      return {
+         open: false 
+      }
+    } 
+}
+</script>
