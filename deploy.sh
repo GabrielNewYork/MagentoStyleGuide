@@ -6,18 +6,7 @@ set -e
 # build
 npm run build
 
-# navigate into the build output directory
-cd dist
-
-# if you are deploying to a custom domain
-# echo 'www.example.com' > CNAME
-git stash
-git checkout styleguidepage
-git stash apply
-
-git add .
-git commit -m 'deploy'
-
-git push
+git add dist && git commit -m "deploy"
+git subtree push --prefix dist origin styleguidepage
 
 cd -
