@@ -20,6 +20,6 @@ git commit -m 'deploy'
 #git push -f git@github.com:gustavo-sas/gustavo-sas.github.io.git master
 
 # if you are deploying to https://<USERNAME>.github.io/<REPO>
-git push -f git@github.com:gustavo-sas/MagentoStyleGuide.git master:styleguide
+git push styleguide
 
 cd -
