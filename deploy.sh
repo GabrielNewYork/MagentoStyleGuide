@@ -11,15 +11,13 @@ cd dist
 
 # if you are deploying to a custom domain
 # echo 'www.example.com' > CNAME
+git stash
+git checkout styleguidepage
+git stash apply
 
-git init
-git add -A
+git add .
 git commit -m 'deploy'
 
-# if you are deploying to https://<USERNAME>.github.io
-#git push -f git@github.com:gustavo-sas/gustavo-sas.github.io.git master
-
-# if you are deploying to https://<USERNAME>.github.io/<REPO>
-git push --set-upstream styleguide master
+git push
 
 cd -
