@@ -11,6 +11,7 @@
                 <Header></Header>
                 <Footer ></Footer>
                 <Storelocator></Storelocator>
+                <Product></Product>
 
             </div>
         </div>
@@ -28,6 +29,7 @@ import Storelocator from '../components/main/storelocator'
 import Styles from '../components/main/styles'
 import Typography from '../components/main/typography'
 import Colors from '../components/main/colors'
+import Product from '../components/main/product'
 
 
 export default {
@@ -40,7 +42,8 @@ export default {
         Storelocator,
         Styles,
         Typography,
-        Colors
+        Colors,
+        Product
   },
 
 }

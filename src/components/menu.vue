@@ -33,6 +33,12 @@
                     <a class="hover:ttw-ext-gray-900 mdl-navigation__link name" href="#Footer">Footer</a>
                 </li>
                 <li class="tw-my-3">
+                    <a class="hover:tw-text-gray-900 mdl-navigation__link name" href="#Product">Product</a>
+                </li>
+                <li class="tw-ml-4 tw-my-3">
+                    <a class="hover:tw-text-gray-900 mdl-navigation__link name" href="#Productcard">Product Card</a>
+                </li>
+                <li class="tw-my-3">
                     <a class="hover:tw-text-gray-900 mdl-navigation__link name" href="#Storelocator">Store Locator</a>
                 </li>
             </ul>
