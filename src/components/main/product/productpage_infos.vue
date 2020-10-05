@@ -33,7 +33,7 @@
             </div>
             <!-- Buttons -->
             <button class="tw-text-sans tw-w-full tw-py-8 tw-bg-gray-900 tw-text-white tw-text-xl tw-border tw-solid tw-border-gray-900 tw-tracking-wider hover:tw-bg-red-600 hover:tw-border-red-600">Book An Appointment</button>
-            <button class="tw-w-full tw-py-6 tw-bg-white tw-text-gray-900 tw-text-lg tw-border tw-solid te-border-gray-900 tw-mt-5 tw-tracking-wider tw-font-normal tw-font-sans tw-mb-4 hover:tw-border-red-600 hover:tw-text-red-600">Find Nearest Store</button>
+            <button class="tw-w-full tw-py-6 tw-bg-white tw-text-gray-900 tw-text-lg tw-border tw-border-solid tw-border-gray-900 tw-mt-5 tw-tracking-wider tw-font-normal tw-font-sans tw-mb-4 hover:tw-border-red-600 hover:tw-text-red-600">Find Nearest Store</button>
             <!-- Contacts -->
             <div class="tw-flex tw-items-center tw-justify-around tw-mt-8 tw-text-sans tw-font-normal">
                 <a href="javascript:void(window.open('https://livechat.gabrielny.com/chat.php?a=7a805&epc=I2ZhNDUxYw__&etc=I2U1ZTVlNQ__','','width=610,height=760,left=0,top=0,resizable=yes,menubar=no,location=no,status=yes,scrollbars=yes'))" class="hover:tw-text-red-600 tw-no-underline tw-text-gray-900">

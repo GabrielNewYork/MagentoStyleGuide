@@ -27,8 +27,6 @@ import Header from '../components/main/header'
 import Footer from '../components/main/footer'
 import Storelocator from '../components/main/storelocator'
 import Styles from '../components/main/styles'
-import Typography from '../components/main/typography'
-import Colors from '../components/main/colors'
 import Product from '../components/main/product'
 
 
@@ -41,8 +39,6 @@ export default {
         Footer,
         Storelocator,
         Styles,
-        Typography,
-        Colors,
         Product
   },
 

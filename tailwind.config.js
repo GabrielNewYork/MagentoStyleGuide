@@ -8,8 +8,20 @@ module.exports = {
         },
         extend: {
             backgroundOpacity: {
-                '05': '0.05'
-            }
+                '05': '0.05',
+            },
+            colors: {
+                'red-darkest': '#8A120F',
+                'red-dark': '#B81814',
+                'red-base': '#E61E19',
+                'red-light': '#F07875',
+                'red-lightest': '#FAD2D1',
+                'gray-darkest': '#575965',
+                'gray-dark': '#6F7181',
+                'gray-base': '#898B99',
+                'gray-light': '#C0C1C9',
+                'gray-lightest': '#DBDDE0',
+            },
         },
         fontSize: {
             'xs': '0.750rem', // -0.150
