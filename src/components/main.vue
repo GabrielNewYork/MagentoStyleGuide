@@ -1,21 +1,22 @@
 <template>
-    <main class="mdl-layout__content">
-        <div class="page-content">
-            <div class="tw-mx-40">
+  <main class="mdl-layout__content">
+    <div class="page-content">
+      <div class="tw-mx-40">
 
-                <Intro></Intro>
-                <Designing></Designing>
-                <Styles></Styles>
-                <Typography></Typography>
-                <Colors></Colors>
-                <Header></Header>
-                <Footer ></Footer>
-                <Storelocator></Storelocator>
-                <Product></Product>
+        <Intro></Intro>
+        <Designing></Designing>
+        <Styles></Styles>
+        <Typography></Typography>
+        <Colors></Colors>
+        <Header></Header>
+        <Footer></Footer>
+        <Storelocator></Storelocator>
+        <Product></Product>
+        <OnBehalfRetailer></OnBehalfRetailer>
 
-            </div>
-        </div>
-    </main>
+      </div>
+    </div>
+  </main>
 </template>
 
 
@@ -30,20 +31,22 @@ import Styles from '../components/main/styles'
 import Typography from '../components/main/typography'
 import Colors from '../components/main/colors'
 import Product from '../components/main/product'
+import OnBehalfRetailer from "@/components/main/checkout/OnBehalftRetailer";
 
 
 export default {
-    name: 'Main',
-    components: {
-        Intro,
-        Designing,
-        Header,
-        Footer,
-        Storelocator,
-        Styles,
-        Typography,
-        Colors,
-        Product
+  name: 'Main',
+  components: {
+    OnBehalfRetailer,
+    Intro,
+    Designing,
+    Header,
+    Footer,
+    Storelocator,
+    Styles,
+    Typography,
+    Colors,
+    Product
   },
 
 }
