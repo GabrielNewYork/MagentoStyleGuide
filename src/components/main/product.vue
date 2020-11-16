@@ -3,13 +3,13 @@
     <section class="tw-mb-20" id="Product">
         <h1 class="tw-text-7xl tw-font-normal tw-tracking-wide tw-my-16 tw-font-sans ">Product</h1>
 
-        <h2 class="tw-text-2xl tw-font-bold tw-mb-4">Product Card</h2>
+        <h2 class="tw-text-3xl tw-font-bold tw-mb-4">Product Card</h2>
         <ProductCard></ProductCard>
 
-        <h2 class="tw-text-2xl tw-font-bold tw-mb-4">Product Page Infos</h2>
+        <h2 class="tw-text-3xl tw-font-bold tw-mb-4">Product Page Infos</h2>
         <ProductPageInfos></ProductPageInfos>
 
-        <h2 class="tw-text-2xl tw-font-bold tw-mb-4">Product Page Bottom</h2>
+        <h2 class="tw-text-3xl tw-font-bold tw-mb-4">Product Page Bottom</h2>
         <ProductPagebottom></ProductPagebottom>
 
     </section>

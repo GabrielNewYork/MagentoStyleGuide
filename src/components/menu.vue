@@ -21,11 +21,15 @@
                     <a class="hover:tw-text-gray-900 mdl-navigation__link name" href="#Styles">Styles</a>
                 </li>
                 <li class="tw-ml-4 tw-my-3">
+                    <a class="hover:tw-text-gray-900 mdl-navigation__link name" href="#Breakpoints">Breakpoints</a>
+                </li>
+                <li class="tw-ml-4 tw-my-3">
                     <a class="hover:tw-text-gray-900 mdl-navigation__link name" href="#Typography">Typography</a>
                 </li>
                 <li class="tw-ml-4 tw-my-3">
                     <a class="hover:tw-text-gray-900 mdl-navigation__link name" href="#Colors">Colors</a>
                 </li>
+
                 <li class="tw-my-3">
                     <a class="hover:tw-text-gray-900 mdl-navigation__link name" href="#Header">Header</a>
                 </li>

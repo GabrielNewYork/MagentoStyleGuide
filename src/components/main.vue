@@ -1,4 +1,5 @@
 <template>
+
   <main class="mdl-layout__content">
     <div class="page-content">
       <div class="tw-mx-40">
@@ -12,11 +13,13 @@
         <Footer></Footer>
         <Storelocator></Storelocator>
         <Product></Product>
+        <login></Login>
         <OnBehalfRetailer></OnBehalfRetailer>
 
       </div>
     </div>
   </main>
+
 </template>
 
 
@@ -28,25 +31,23 @@ import Header from '../components/main/header'
 import Footer from '../components/main/footer'
 import Storelocator from '../components/main/storelocator'
 import Styles from '../components/main/styles'
-import Typography from '../components/main/typography'
-import Colors from '../components/main/colors'
 import Product from '../components/main/product'
-import OnBehalfRetailer from "@/components/main/checkout/OnBehalftRetailer";
+import Login from '../components/main/login'
+import OnBehalfRetailer from '@/components/main/checkout/OnBehalftRetailer'
 
 
 export default {
   name: 'Main',
   components: {
-    OnBehalfRetailer,
     Intro,
     Designing,
     Header,
     Footer,
     Storelocator,
     Styles,
-    Typography,
-    Colors,
-    Product
+    Product,
+    Login,
+    OnBehalfRetailer
   },
 
 }
