@@ -5,6 +5,7 @@ module.exports = {
             'sans': ['Nunito Sans'],
             'serif': ['Georgia', 'Cambria'],
             'mono': ['SFMono-Regular', 'Menlo'],
+            "lora": ['Lora']
         },
         extend: {
             backgroundOpacity: {
@@ -21,6 +22,10 @@ module.exports = {
                 'gray-base': '#898B99',
                 'gray-light': '#C0C1C9',
                 'gray-lightest': '#DBDDE0',
+                'base': '#000000',
+                'dark01': '#292929',
+                'dark02': '#525252',
+                'dark03': '#7A7A7A'
             },
         },
         fontSize: {

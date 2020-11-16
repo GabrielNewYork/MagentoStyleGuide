@@ -12,6 +12,7 @@
                 <Footer ></Footer>
                 <Storelocator></Storelocator>
                 <Product></Product>
+                <login></Login>
 
             </div>
         </div>
@@ -28,6 +29,7 @@ import Footer from '../components/main/footer'
 import Storelocator from '../components/main/storelocator'
 import Styles from '../components/main/styles'
 import Product from '../components/main/product'
+import Login from '../components/main/login'
 
 
 export default {
@@ -39,7 +41,8 @@ export default {
         Footer,
         Storelocator,
         Styles,
-        Product
+        Product,
+        Login
   },
 
 }
