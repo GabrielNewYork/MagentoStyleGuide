@@ -7,8 +7,6 @@
         <Intro></Intro>
         <Designing></Designing>
         <Styles></Styles>
-        <Typography></Typography>
-        <Colors></Colors>
         <Header></Header>
         <Footer></Footer>
         <Storelocator></Storelocator>
