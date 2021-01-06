@@ -13,6 +13,7 @@
         <Product></Product>
         <login></Login>
         <OnBehalfRetailer></OnBehalfRetailer>
+        <StoreHeader></StoreHeader>
 
       </div>
     </div>
@@ -32,11 +33,13 @@ import Styles from '../components/main/styles'
 import Product from '../components/main/product'
 import Login from '../components/main/login'
 import OnBehalfRetailer from '@/components/main/checkout/OnBehalftRetailer'
+import StoreHeader from "@/components/main/stores/StoreHeader";
 
 
 export default {
   name: 'Main',
   components: {
+    StoreHeader,
     Intro,
     Designing,
     Header,

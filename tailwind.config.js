@@ -8,6 +8,10 @@ module.exports = {
             "lora": ['Lora']
         },
         extend: {
+            height: {
+                '300px': '300px',
+                '400px': '400px'
+            },
             backgroundOpacity: {
                 '05': '0.05',
             },
@@ -25,7 +29,9 @@ module.exports = {
                 'base': '#000000',
                 'dark01': '#292929',
                 'dark02': '#525252',
-                'dark03': '#7A7A7A'
+                'dark03': '#7A7A7A',
+                'gray-theme-hero': '#CACACA',
+                'gray-theme-light': '#F4F4F4'
             },
         },
         fontSize: {

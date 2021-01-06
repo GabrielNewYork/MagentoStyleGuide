@@ -51,6 +51,9 @@
                 <li class="tw-ml-4 tw-my-3">
                   <a class="hover:tw-text-gray-900 mdl-navigation__link name" href="#OnBehalfRetailer">On Behalf</a>
                 </li>
+                <li class="tw-ml-4 tw-my-3">
+                  <a class="hover:tw-text-gray-900 mdl-navigation__link name" href="#Stores">Stores</a>
+                </li>
             </ul>
         </nav>
     </div>
