@@ -14,7 +14,7 @@
         <login></Login>
         <OnBehalfRetailer></OnBehalfRetailer>
         <StoreHeader></StoreHeader>
-
+        <PostCard></PostCard>
       </div>
     </div>
   </main>
@@ -34,6 +34,7 @@ import Product from '../components/main/product'
 import Login from '../components/main/login'
 import OnBehalfRetailer from '@/components/main/checkout/OnBehalftRetailer'
 import StoreHeader from "@/components/main/stores/StoreHeader";
+import PostCard from "@/components/main/media_pages/PostCard";
 
 
 export default {
@@ -48,7 +49,8 @@ export default {
     Styles,
     Product,
     Login,
-    OnBehalfRetailer
+    OnBehalfRetailer,
+    PostCard
   },
 
 }

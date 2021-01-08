@@ -50,8 +50,8 @@ module.exports = {
             '7xl': '5.150rem', // + 1.0
         }
     },
-    variants: {
-
-    },
+    // variants: {
+    //
+    // },
     plugins: [],
 }
