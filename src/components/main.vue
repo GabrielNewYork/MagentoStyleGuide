@@ -10,11 +10,13 @@
         <Header></Header>
         <Footer></Footer>
         <Storelocator></Storelocator>
+        <StoreLocatorCard></StoreLocatorCard>
         <Product></Product>
         <login></Login>
         <OnBehalfRetailer></OnBehalfRetailer>
         <StoreHeader></StoreHeader>
         <PostCard></PostCard>
+
       </div>
     </div>
   </main>
@@ -35,6 +37,7 @@ import Login from '../components/main/login'
 import OnBehalfRetailer from '@/components/main/checkout/OnBehalftRetailer'
 import StoreHeader from "@/components/main/stores/StoreHeader";
 import PostCard from "@/components/main/media_pages/PostCard";
+import StoreLocatorCard from "@/components/main/store_locator/StoreLocatorCard";
 
 
 export default {
@@ -50,7 +53,8 @@ export default {
     Product,
     Login,
     OnBehalfRetailer,
-    PostCard
+    PostCard,
+    StoreLocatorCard
   },
 
 }

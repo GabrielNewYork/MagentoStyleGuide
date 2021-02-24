@@ -1,4 +1,8 @@
 module.exports = {
+    // purge: [
+    //     './src/components/main/**/*.html',
+    //     './src/components/main/**/*.vue',
+    // ],
     prefix: 'tw-',
     theme: {
         fontFamily: {
@@ -16,6 +20,23 @@ module.exports = {
                 '05': '0.05',
             },
             colors: {
+                scarlet: {
+                    '50':  '#fcf8f6',
+                    '100': '#fceeee',
+                    '200': '#fbd2dc',
+                    '300': '#faacbd',
+                    '400': '#fa778b',
+                    '500': '#fb4c5e',
+                    '600': '#e61e19',
+                    'hover': '#e61e19',
+                    'default': '#e61e19',
+                    '700': '#db2338',
+                    '800': '#b11d31',
+                    '900': '#8e1929',
+                },
+
+
+
                 'red-darkest': '#8A120F',
                 'red-dark': '#B81814',
                 'red-base': '#E61E19',
