@@ -1,6 +1,6 @@
 <template>
     
-    <section class="tw-mb-20" id="Product">
+    <section class="tw-mb-20" id="Product tw-container">
         <h1 class="tw-text-7xl tw-font-normal tw-tracking-wide tw-my-16 tw-font-sans ">Product</h1>
 
         <h2 class="tw-text-3xl tw-font-bold tw-mb-4">Product Card</h2>

@@ -1,17 +1,20 @@
-const magentoPath = '/Users/leo/Projetos/SmartAgeSolutions/Gabriel.co/Magento/app'
+const magentoPath = '/Users/leo/Projetos/SmartAgeSolutions/Gabriel.co/Magento/';
 module.exports = {
     purge: {
         content: [
-            './src/components/main/**/*.html',
-            './src/components/main/**/*.vue',
+            './src/components/**/*.html',
+            './src/components/**/*.vue',
             // Path to magento project
-            `${magentoPath}/**/*.phtml`,
-            `${magentoPath}/**/*.html`,
-            `${magentoPath}/**/*.js`,
+            `${magentoPath}/app/**/*.phtml`,
+            `${magentoPath}/app/**/*.html`,
+            `${magentoPath}/app/**/*.js`,
+            `${magentoPath}/docs/**/*.phtml`,
+            `${magentoPath}/docs/**/*.html`,
+            `${magentoPath}/docs/**/*.js`,
         ],
         // These options are passed through directly to PurgeCSS
         options: {
-            // safelist: ['bg-red-500', 'px-4'],
+            safelist: ['container'],
             blocklist: [/^mdl-/, 'page-content', 'sidebar', 'search-area'],
             // keyframes: true,
             // fontFace: true,
@@ -19,6 +22,16 @@ module.exports = {
     },
     prefix: 'tw-',
     theme: {
+        container: {
+            center: true,
+            padding: {
+                default: '1.25rem',
+                sm: '2rem',
+                lg: '4rem',
+                xl: '5rem',
+                '2xl': '6rem',
+            },
+        },
         fontFamily: {
             'sans': ['Nunito Sans'],
             'serif': ['Georgia', 'Cambria'],
