@@ -1,5 +1,5 @@
 <template>
-  <div class="mdl-layout__drawer sidebar p-6" id="plugin-list">
+  <div class="mdl-layout__drawer sidebar tw-p-6" id="plugin-list">
     <h1 class="tw-ml-10 tw-text-xl tw-font-thin tw-leading-tight tw-mb-0">
       <span class="tw-font-extrabold tw-text-3xl">GABRIEL&CO</span><br>Styleguide
     </h1>
@@ -36,7 +36,7 @@
           <a class="hover:tw-text-gray-900 mdl-navigation__link name" href="#Header">Header</a>
         </li>
         <li class="tw-my-3">
-          <a class="hover:ttw-ext-gray-900 mdl-navigation__link name" href="#Footer">Footer</a>
+          <a class="hover:tw-ext-gray-900 mdl-navigation__link name" href="#Footer">Footer</a>
         </li>
         <li class="tw-my-3">
           <a class="hover:tw-text-gray-900 mdl-navigation__link name" href="#Product">Product</a>

@@ -1,8 +1,22 @@
+const magentoPath = '/Users/leo/Projetos/SmartAgeSolutions/Gabriel.co/Magento/app'
 module.exports = {
-    // purge: [
-    //     './src/components/main/**/*.html',
-    //     './src/components/main/**/*.vue',
-    // ],
+    purge: {
+        content: [
+            './src/components/main/**/*.html',
+            './src/components/main/**/*.vue',
+            // Path to magento project
+            `${magentoPath}/**/*.phtml`,
+            `${magentoPath}/**/*.html`,
+            `${magentoPath}/**/*.js`,
+        ],
+        // These options are passed through directly to PurgeCSS
+        options: {
+            // safelist: ['bg-red-500', 'px-4'],
+            blocklist: [/^mdl-/, 'page-content', 'sidebar', 'search-area'],
+            // keyframes: true,
+            // fontFace: true,
+        },
+    },
     prefix: 'tw-',
     theme: {
         fontFamily: {
@@ -21,7 +35,7 @@ module.exports = {
             },
             colors: {
                 scarlet: {
-                    '50':  '#fcf8f6',
+                    '50': '#fcf8f6',
                     '100': '#fceeee',
                     '200': '#fbd2dc',
                     '300': '#faacbd',
@@ -34,7 +48,6 @@ module.exports = {
                     '800': '#b11d31',
                     '900': '#8e1929',
                 },
-
 
 
                 'red-darkest': '#8A120F',
@@ -71,8 +84,8 @@ module.exports = {
             '7xl': '5.150rem', // + 1.0
         }
     },
-    // variants: {
-    //
-    // },
+    variants: {
+        borderWidth: ['last'],
+    },
     plugins: [],
 }
