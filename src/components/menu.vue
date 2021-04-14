@@ -62,6 +62,9 @@
         <li class="tw-my-4">
           <a class="hover:tw-text-gray-900 mdl-navigation__link name" href="#MediaPages">Media pages</a>
         </li>
+        <li class="tw-my-4">
+          <a class="hover:tw-text-gray-900 mdl-navigation__link name" href="#AlertMessages">Alert messages</a>
+        </li>
       </ul>
     </nav>
   </div>

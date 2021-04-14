@@ -16,6 +16,7 @@
         <OnBehalfRetailer></OnBehalfRetailer>
         <StoreHeader></StoreHeader>
         <PostCard></PostCard>
+        <AlertMessages></AlertMessages>
 
       </div>
     </div>
@@ -38,11 +39,13 @@ import OnBehalfRetailer from '@/components/main/checkout/OnBehalftRetailer'
 import StoreHeader from "@/components/main/stores/StoreHeader";
 import PostCard from "@/components/main/media_pages/PostCard";
 import StoreLocatorCard from "@/components/main/store_locator/StoreLocatorCard";
+import AlertMessages from "@/components/main/AlertMessages";
 
 
 export default {
   name: 'Main',
   components: {
+    AlertMessages,
     StoreHeader,
     Intro,
     Designing,
