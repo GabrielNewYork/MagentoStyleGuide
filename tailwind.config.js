@@ -1,4 +1,6 @@
-const magentoPath = '/Users/leo/Projetos/SmartAgeSolutions/Gabriel.co/Magento/';
+// const magentoPath = '/Users/leo/Projetos/SmartAgeSolutions/Gabriel.co/Magento/';
+const magentoPath = '/home/mariamussi/Gabriel&Co/www';
+
 module.exports = {
     purge: {
         content: [
