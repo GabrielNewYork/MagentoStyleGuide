@@ -1,162 +1,227 @@
+
 <template>
-<section class="tw-mb-20" id="Headermiddle">
-        
-    <div class="tw-border tw-border-gray-400 tw-border-solid tw-p-4">    
-        <!-- Header Middle -->
-        <div class="tw-header-main tw-flex tw-justify-between tw-items-center tw-my-10 sm:tw-mx-16 tw-mx-10 sm:tw-h-16 tw-h-6">
-            <!-- Left links -->
-            <ul class="tw-list-none tw-flex tw-items-center tw-justify-start tw-w-1/4 tw-p-0 tw-m-0">
-                <li class="tw-inline tw-m-0 tw-hidden sm:tw-block">
-                    <a class="tw-text-gray-900 tw-no-underline" href="/storelocator" title="Find a Store">Store Locator</a>
-                </li>
-                <li class="tw-inline tw-m-0 tw-w-px tw-mx-5 tw-py-4 tw-bg-gray-400 tw-hidden sm:tw-block"></li>
-                <li class="tw-inline tw-m-0 tw-hidden sm:tw-block">
-                    <a class="tw-text-gray-900 tw-no-underline" href="/wishlist" title="Wish List">Wishlist</a>
-                </li>
-                <li class="tw-inline tw-m-0 tw-w-px tw-mx-5 tw-py-4 tw-bg-gray-400 tw-hidden sm:tw-block"></li>
-                <li class="tw-inline tw-m-0 tw-hidden sm:tw-block">
-                    <a class="tw-text-gray-900 tw-no-underline" href="https://b2b.gabrielny.com" title="Retailer">Retailer</a>
-                </li>
-                <!-- Toggle mobile menu -->
-                <div class="menu-icon tw-w-8 sm:tw-hidden tw-block">
-                <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
-                </svg>
-                </div>
-            </ul>
-            <!-- /Left links -->
-            <!-- Logo -->
-            <a class="tw-p-0 tw-m-0 tw-flex" href="https://gabrieldev.smartagehosting.com/" aria-label="store logo">
-                <img class="tw-w-64 sm:tw-w-auto" src="https://gabrieldev.smartagehosting.com/static/version1597848588/frontend/GabrielCo/default/en_US/images/logo.svg" title="" alt="" width="300">
-            </a>
-            <!-- /Logo -->
-            <!-- Right links -->
-            <ul class="ltw-ist-none tw-flex tw-items-center tw-justify-end tw-w-1/4 tw-p-0 tw-m-0">
-                <!-- Search -->
-                <li class="tw-inline tw-m-6 sm:tw-mr-0">
-                    <a href="/customer/account/login/" title="User Login">
-                        <svg width="20px" height="20px" viewBox="0 0 59 65">
-                            <path d="M1193.6411,146.7246 C1200.1731,153.2546 1210.7991,153.2536 1217.3291,146.7246 C1220.4941,143.5606 1222.2361,139.3546 1222.2361,134.8806 C1222.2361,130.4066 1220.4941,126.2006 1217.3291,123.0366 C1214.1701,119.8786 1209.9641,118.1396 1205.4851,118.1396 C1201.0061,118.1396 1196.8001,119.8786 1193.6411,123.0366 C1190.4781,126.2006 1188.7361,130.4066 1188.7361,134.8806 C1188.7361,139.3556 1190.4781,143.5616 1193.6411,146.7246 L1193.6411,146.7246 Z M1205.4861,153.6206 C1200.6841,153.6206 1195.8831,151.7936 1192.2271,148.1386 C1188.6861,144.5986 1186.7361,139.8896 1186.7361,134.8806 C1186.7361,129.8716 1188.6861,125.1636 1192.2271,121.6226 C1195.7641,118.0866 1200.4721,116.1396 1205.4851,116.1396 C1210.4971,116.1396 1215.2061,118.0866 1218.7441,121.6226 C1222.2861,125.1636 1224.2361,129.8726 1224.2361,134.8806 C1224.2361,139.8896 1222.2861,144.5976 1218.7441,148.1396 C1215.0891,151.7936 1210.2871,153.6206 1205.4861,153.6206 L1205.4861,153.6206 Z M1218.4951,152.3096 L1235.1531,168.9686 C1236.3721,170.1866 1238.3551,170.1846 1239.5731,168.9686 C1240.7901,167.7496 1240.7901,165.7666 1239.5731,164.5486 L1222.9191,147.8956 L1223.3941,147.2096 C1225.9081,143.5756 1227.2361,139.3116 1227.2361,134.8806 C1227.2361,129.0716 1224.9731,123.6096 1220.8651,119.5016 C1216.7641,115.4006 1211.3021,113.1416 1205.4851,113.1416 C1199.6681,113.1416 1194.2061,115.3996 1190.1061,119.5016 C1185.9981,123.6096 1183.7361,129.0716 1183.7361,134.8806 C1183.7361,140.6906 1185.9981,146.1526 1190.1061,150.2606 C1194.2061,154.3616 1199.6681,156.6206 1205.4861,156.6206 C1209.9031,156.6206 1214.1641,155.2926 1217.8091,152.7826 L1218.4951,152.3096 Z M1237.3631,171.8806 C1236.0501,171.8806 1234.7381,171.3816 1233.7391,170.3826 L1218.2471,154.8916 C1214.4261,157.3336 1210.0321,158.6206 1205.4861,158.6206 C1199.1341,158.6206 1193.1701,156.1536 1188.6921,151.6746 C1184.2061,147.1896 1181.7361,141.2246 1181.7361,134.8806 C1181.7361,128.5376 1184.2061,122.5726 1188.6921,118.0876 C1193.1691,113.6086 1199.1341,111.1416 1205.4851,111.1416 L1205.4861,111.1416 C1211.8361,111.1416 1217.8001,113.6086 1222.2791,118.0876 C1226.7651,122.5736 1229.2361,128.5376 1229.2361,134.8806 C1229.2361,139.4396 1227.9481,143.8366 1225.5021,147.6506 L1240.9871,163.1346 C1242.9851,165.1326 1242.9851,168.3846 1240.9871,170.3826 C1239.9881,171.3816 1238.6751,171.8806 1237.3631,171.8806 L1237.3631,171.8806 Z" transform="translate(-1181.000000, -111.000000)"></path>
-                        </svg>
-                    </a>
-                </li>
-                <!-- / Search -->
-                <li class="tw-inline tw-m-0 tw-w-px tw-mx-6 tw-py-2 tw-bg-gray-400 tw-hidden sm:tw-block">&nbsp;</li>
-                <!-- Login -->
-                <li class="tw-inline tw-m-0 tw-hidden sm:tw-block">
-                <a href="/customer/account/login/" title="User Login">
-                    <svg width="20px" height="20px" viewBox="0 0 59 65">
-                            <path d="M1211.67608,463 C1203.58508,463 1197.00308,469.582 1197.00308,477.673 C1197.00308,485.764 1203.58508,492.346 1211.67608,492.346 C1219.76708,492.346 1226.34908,485.764 1226.34908,477.673 C1226.34908,469.582 1219.76708,463 1211.67608,463 Z M1211.67608,494.346 C1202.48308,494.346 1195.00308,486.867 1195.00308,477.673 C1195.00308,468.479 1202.48308,461 1211.67608,461 C1220.86908,461 1228.34908,468.479 1228.34908,477.673 C1228.34908,486.867 1220.86908,494.346 1211.67608,494.346 Z M1235.06278,524.4839 C1236.21978,522.9969 1236.62278,521.1169 1236.16778,519.3259 L1231.56978,501.1879 C1230.84678,498.3369 1228.15778,496.3459 1225.02978,496.3459 L1222.12978,496.3459 C1219.17478,498.7269 1215.47778,500.0339 1211.67578,500.0339 C1207.87578,500.0339 1204.17778,498.7269 1201.22278,496.3459 L1198.45178,496.3459 C1195.34278,496.3459 1192.65778,498.3209 1191.91978,501.1499 L1187.19378,519.2889 C1186.72578,521.0839 1187.12078,522.9709 1188.27678,524.4669 C1189.55678,526.1249 1191.54278,527.0749 1193.72478,527.0749 L1229.62778,527.0749 C1231.80078,527.0749 1233.78178,526.1299 1235.06278,524.4839 Z M1238.10778,518.8349 C1238.71378,521.2279 1238.17978,523.7349 1236.64178,525.7119 C1234.97878,527.8489 1232.42178,529.0749 1229.62778,529.0749 L1193.72478,529.0749 C1190.91878,529.0749 1188.35578,527.8409 1186.69378,525.6899 C1185.15678,523.6999 1184.63278,521.1839 1185.25778,518.7849 L1189.98478,500.6449 C1190.95178,496.9359 1194.43278,494.3459 1198.45178,494.3459 L1201.94678,494.3459 L1202.22578,494.5819 C1204.86678,496.8079 1208.22278,498.0339 1211.67578,498.0339 C1215.12978,498.0339 1218.48678,496.8079 1221.12678,494.5819 L1221.40678,494.3459 L1225.02978,494.3459 C1229.07478,494.3459 1232.56078,496.9579 1233.50878,500.6959 L1238.10778,518.8349 Z" transform="translate(-1185.000000, -461.000000)"></path>
-                        </svg>
-                    </a>
-                </li>
-                <!-- / Login -->
-                <li class="tw-inline tw-m-0 tw-w-px tw-mx-6 tw-py-2 tw-bg-gray-400 tw-hidden sm:tw-block">&nbsp;</li>
-                <!-- Cart -->
-                <li class="tw-inline tw-m-0">
-                    <a href="/checkout" class="dropdown-select userbasketcls" id="userbasketcls" title="Cart">
-                        <svg width="20px" height="20px" viewBox="0 0 59 65">
-                            <path d="M1197.98,252.1675 L1227.749,252.1675 C1227.582,242.1895 1220.969,234.1365 1212.865,234.1365 C1204.76,234.1365 1198.147,242.1895 1197.98,252.1675 L1197.98,252.1675 Z M1229.715,254.1675 L1196.013,254.1675 L1195.986,253.0285 C1195.981,252.8715 1195.977,252.7125 1195.977,252.5535 C1195.977,241.2955 1203.553,232.1365 1212.865,232.1365 C1222.176,232.1365 1229.751,241.2955 1229.751,252.5535 C1229.751,252.7125 1229.748,252.8715 1229.743,253.0285 L1229.715,254.1675 Z M1211.314,264.3745 C1210.718,264.3745 1210.234,264.8365 1210.234,265.4055 L1210.234,265.8345 C1210.234,266.4025 1210.718,266.8655 1211.314,266.8655 L1214.416,266.8655 C1215.01,266.8655 1215.495,266.4025 1215.495,265.8345 L1215.495,265.4055 C1215.495,264.8365 1215.01,264.3745 1214.416,264.3745 L1211.314,264.3745 Z M1214.416,268.8655 L1211.314,268.8655 C1209.616,268.8655 1208.234,267.5055 1208.234,265.8345 L1208.234,265.4055 C1208.234,263.7335 1209.616,262.3745 1211.314,262.3745 L1214.416,262.3745 C1216.114,262.3745 1217.495,263.7335 1217.495,265.4055 L1217.495,265.8345 C1217.495,267.5055 1216.114,268.8655 1214.416,268.8655 L1214.416,268.8655 Z M1191.876,254.2015 C1189.912,254.3855 1188.121,255.2975 1186.986,256.7205 C1185.948,258.0215 1185.571,259.5925 1185.923,261.1415 L1191.35,284.9345 C1191.976,287.6755 1194.788,289.6655 1198.038,289.6655 L1227.691,289.6655 C1230.941,289.6655 1233.752,287.6755 1234.378,284.9345 L1239.805,261.1415 C1240.148,259.6355 1239.797,258.1025 1238.818,256.8235 C1237.618,255.2565 1235.605,254.2705 1233.435,254.1845 L1232.453,254.1465 L1232.48,252.9525 C1232.484,252.8075 1232.488,252.6625 1232.488,252.5155 C1232.488,239.6265 1223.685,229.1415 1212.865,229.1415 C1202.142,229.1415 1193.4,239.4385 1193.243,252.1675 L1193.246,252.1675 L1193.246,252.8345 C1193.247,252.8745 1193.248,252.9135 1193.249,252.9525 L1193.254,253.1635 L1193.246,253.1645 L1193.246,254.1675 C1193.129,254.1675 1192.411,254.1805 1192.295,254.1845 L1191.876,254.2015 Z M1227.691,291.6655 L1198.038,291.6655 C1193.864,291.6655 1190.231,289.0215 1189.401,285.3785 L1183.974,261.5855 C1183.483,259.4315 1183.997,257.2605 1185.422,255.4735 C1186.806,253.7385 1188.917,252.5905 1191.242,252.2635 C1191.358,238.3885 1201.013,227.1415 1212.865,227.1415 C1224.718,227.1415 1234.376,238.3915 1234.487,252.2715 C1236.89,252.6005 1239.01,253.7855 1240.406,255.6065 C1241.753,257.3665 1242.233,259.4905 1241.754,261.5855 L1236.328,285.3785 C1235.498,289.0215 1231.865,291.6655 1227.691,291.6655 L1227.691,291.6655 Z" transform="translate(-1183.000000, -227.000000)"></path>
-                        </svg>
-                    </a>
-                </li>
-                <!-- / Cart -->
-                <li class="tw-inline tw-m-0 tw-w-px tw-mx-6 tw-py-2 tw-bg-gray-400 tw-hidden sm:tw-block">&nbsp;</li>
-                <!-- Currency & Ship -->
-                <li class="tw-inline tw-m-0 tw-hidden sm:tw-block">
-                <div class="dropdown tw-inline-block tw-relative">
-                    <button class="hover:tw-bg-transparent tw-bg-transparent hover:tw-border-0 tw-border-0 tw-p-0 tw-m-0 tw-w-10">
-                    <img src="https://cdn-images.gabrielny.com/is/image/GabrielCo/us_flag?scl=1">
-                    </button>
-                </div>
-                </li>
-                <!-- / Currency & Ship -->
-            </ul>
-            <!-- /Right links -->
+    <section class="tw-mb-20" id="Headermiddle">
+        <div class="tw-border tw-border-gray-400 tw-border-solid tw-p-4">    
+            <!-- Header Middle -->
+            <div class="tw-header-main tw-flex tw-justify-between tw-items-center tw-my-10 sm:tw-mx-16 tw-mx-10 sm:tw-h-16 tw-h-6">
+                <!-- Left links -->
+                <ul class="tw-list-none tw-flex tw-items-center tw-justify-start tw-w-1/4 tw-p-0 tw-m-0">
+                    <li class="tw-inline tw-m-0 tw-hidden sm:tw-block">
+                    
+                        <a class="tw-no-underline tw-flex tw-items-center" href="/storelocator" title="Find a Store">
+                            <!-- Find a Store Map Pin SVG -->
+                            <svg
+                                width="15"
+                                height="18"
+                                viewBox="0 0 20 20"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <g clip-path="url(#clip0)">
+                                <path
+                                    d="M17.5 8.33325C17.5 14.1666 10 19.1666 10 19.1666C10 19.1666 2.5 14.1666 2.5 8.33325C2.5 6.34413 3.29018 4.43647 4.6967 3.02995C6.10322 1.62343 8.01088 0.833252 10 0.833252C11.9891 0.833252 13.8968 1.62343 15.3033 3.02995C16.7098 4.43647 17.5 6.34413 17.5 8.33325Z"
+                                    stroke="#898B99"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                />
+                                <path
+                                    d="M10 10.8333C11.3807 10.8333 12.5 9.71396 12.5 8.33325C12.5 6.95254 11.3807 5.83325 10 5.83325C8.61929 5.83325 7.5 6.95254 7.5 8.33325C7.5 9.71396 8.61929 10.8333 10 10.8333Z"
+                                    stroke="#898B99"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                />
+                                </g>
+                                <defs>
+                                <clipPath id="clip0">
+                                    <rect width="20" height="20" fill="white" />
+                                </clipPath>
+                                </defs>
+                            </svg>
+
+                            <p class="tw-text-gray-900 tw-font-sans tw-m-0 tw-ml-2" >Find a Store</p>
+                        </a>
+                    </li>
+                
+                </ul>
+                <!-- /Left links -->
+                <!-- Logo -->
+                <a class="tw-p-0 tw-m-0 tw-flex" href="https://magento.gcnydev.com/" aria-label="store logo">
+                    <img src="https://cdn-themes.gabrielny.com/site2017theme/images/theme2019/svg/logo-theme2019.svg" title="" alt="" width="260">
+                </a>
+                <!-- /Logo -->
+                <!-- Right links -->
+                <ul class="tw-list-none tw-flex tw-items-center tw-justify-end tw-w-1/4 tw-p-0 tw-m-0">
+                    <!-- Search -->
+                    <li class="tw-inline tw-mx-2">
+                        <a href="/customer/account/login/" title="User Login">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9.16667 15.8333C12.8486 15.8333 15.8333 12.8486 15.8333 9.16667C15.8333 5.48477 12.8486 2.5 9.16667 2.5C5.48477 2.5 2.5 5.48477 2.5 9.16667C2.5 12.8486 5.48477 15.8333 9.16667 15.8333Z" stroke="#898B99" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M17.5 17.5L13.875 13.875" stroke="#898B99" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </li>
+                    <!-- / Search -->
+                    <!-- Wishlist -->
+                    <li class="tw-inline tw-mb-0 tw-mx-2 tw-hidden sm:tw-block">
+                        <a href="/wishlist" title="User Wishlist">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M17.3671 3.84172C16.9415 3.41589 16.4361 3.0781 15.8799 2.84763C15.3237 2.61716 14.7275 2.49854 14.1254 2.49854C13.5234 2.49854 12.9272 2.61716 12.371 2.84763C11.8147 3.0781 11.3094 3.41589 10.8838 3.84172L10.0004 4.72506L9.11709 3.84172C8.25735 2.98198 7.09129 2.49898 5.87542 2.49898C4.65956 2.49898 3.4935 2.98198 2.63376 3.84172C1.77401 4.70147 1.29102 5.86753 1.29102 7.08339C1.29102 8.29925 1.77401 9.46531 2.63376 10.3251L3.51709 11.2084L10.0004 17.6917L16.4838 11.2084L17.3671 10.3251C17.7929 9.89943 18.1307 9.39407 18.3612 8.83785C18.5917 8.28164 18.7103 7.68546 18.7103 7.08339C18.7103 6.48132 18.5917 5.88514 18.3612 5.32893C18.1307 4.77271 17.7929 4.26735 17.3671 3.84172V3.84172Z" stroke="#898B99" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </li>
+                    <!-- / Wishlist -->
+                    <!-- Login -->
+                    <li class="tw-inline tw-mb-0 tw-mx-2 tw-hidden sm:tw-block">
+                        <a href="/customer/account/login/" title="User Login">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M16.6663 17.5V15.8333C16.6663 14.9493 16.3151 14.1014 15.69 13.4763C15.0649 12.8512 14.2171 12.5 13.333 12.5H6.66634C5.78229 12.5 4.93444 12.8512 4.30932 13.4763C3.6842 14.1014 3.33301 14.9493 3.33301 15.8333V17.5" stroke="#898B99" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M10.0003 9.16667C11.8413 9.16667 13.3337 7.67428 13.3337 5.83333C13.3337 3.99238 11.8413 2.5 10.0003 2.5C8.15938 2.5 6.66699 3.99238 6.66699 5.83333C6.66699 7.67428 8.15938 9.16667 10.0003 9.16667Z" stroke="#898B99" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </li>
+                    <!-- / Login -->
+                    <!-- Cart -->
+                    <li class="tw-inline tw-mb-0 tw-mx-2">
+                        <a href="/checkout/cart" class="dropdown-select userbasketcls tw-relative" id="userbasketcls" title="Cart">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5 1.66675L2.5 5.00008V16.6667C2.5 17.1088 2.67559 17.5327 2.98816 17.8453C3.30072 18.1578 3.72464 18.3334 4.16667 18.3334H15.8333C16.2754 18.3334 16.6993 18.1578 17.0118 17.8453C17.3244 17.5327 17.5 17.1088 17.5 16.6667V5.00008L15 1.66675H5Z" stroke="#898B99" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M2.5 5H17.5" stroke="#898B99" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M13.3337 8.33325C13.3337 9.21731 12.9825 10.0652 12.3573 10.6903C11.7322 11.3154 10.8844 11.6666 10.0003 11.6666C9.11627 11.6666 8.26842 11.3154 7.6433 10.6903C7.01818 10.0652 6.66699 9.21731 6.66699 8.33325" stroke="#898B99" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span class="badge tw-absolute tw-top-1 tw-right-1">1</span>
+                        </a>
+                    </li>
+                    <!-- / Cart -->
+                    <!-- Currency & Ship -->
+                    <!--<li class="tw-inline tw-m-0 tw-hidden sm:tw-block">
+                        <div class="dropdown tw-inline-block tw-relative">
+                            <button class="hover:tw-bg-transparent tw-bg-transparent hover:tw-border-0 tw-border-0 tw-p-0 tw-m-0 tw-w-10">
+                            <img src="https://cdn-images.gabrielny.com/is/image/GabrielCo/us_flag?scl=1">
+                            </button>
+                        </div>
+                    </li>-->
+                    <!-- / Currency & Ship -->
+                </ul>
+                <!-- /Right links -->
+            </div>
         </div>
-    </div>
 
-    <!-- Code BTN -->
-    <button v-on:click="open = !open" class="mdl-button mdl-js-button mdl-js-ripple-effect tw-my-4 tw-text-sm focus:tw-outline-none">Show Code</button>
-    <!-- Code -->
-    <pre v-show="open" class="tw-m-0">
-        <code class="html">
-        &lt;!-- Header Middle -->
-        &lt;div class="tw-header-main tw-flex tw-justify-between tw-items-center tw-my-10 sm:tw-mx-16 tw-mx-10 sm:tw-h-16 tw-h-6">
-            &lt;!-- Left links -->
-            &lt;ul class="tw-list-none tw-flex tw-items-center tw-justify-start tw-w-1/4 tw-p-0 tw-m-0">
-                &lt;li class="tw-inline tw-m-0 tw-hidden sm:tw-block">
-                    &lt;a class="tw-text-gray-900 tw-no-underline" href="/storelocator" title="Find a Store">Store Locator&lt;/a>
-                &lt;/li>
-                &lt;li class="tw-inline tw-m-0 tw-w-px tw-mx-5 tw-py-4 tw-bg-gray-400 tw-hidden sm:tw-block">&lt;/li>
-                &lt;li class="tw-inline tw-m-0 tw-hidden sm:tw-block">
-                    &lt;a class="tw-text-gray-900 tw-no-underline" href="/wishlist" title="Wish List">Wishlist&lt;/a>
-                &lt;/li>
-                &lt;li class="tw-inline tw-m-0 tw-w-px tw-mx-5 tw-py-4 tw-bg-gray-400 tw-hidden sm:tw-block">&lt;/li>
-                &lt;li class="tw-inline tw-m-0 tw-hidden sm:tw-block">
-                    &lt;a class="tw-text-gray-900 tw-no-underline" href="https://b2b.gabrielny.com" title="Retailer">Retailer&lt;/a>
-                &lt;/li>
-                &lt;!-- Toggle mobile menu -->
-                &lt;div class="menu-icon tw-w-8 sm:tw-hidden tw-block">
-                &lt;svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                    &lt;path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z">&lt;/path>
-                &lt;/svg>
-                &lt;/div>
-            &lt;/ul>
-            &lt;!-- /Left links -->
-            &lt;!-- Logo -->
-            &lt;a class="tw-p-0 tw-m-0 tw-flex" href="https://gabrieldev.smartagehosting.com/" aria-label="store logo">
-                &lt;img class="tw-w-64 sm:tw-w-auto" src="https://gabrieldev.smartagehosting.com/static/version1597848588/frontend/GabrielCo/default/en_US/images/logo.svg" title="" alt="" width="300">
-            &lt;/a>
-            &lt;!-- /Logo -->
-            &lt;!-- Right links -->
-            &lt;ul class="ltw-ist-none tw-flex tw-items-center tw-justify-end tw-w-1/4 tw-p-0 tw-m-0">
-                &lt;!-- Search -->
-                &lt;li class="tw-inline tw-m-6 sm:tw-mr-0">
-                    &lt;a href="/customer/account/login/" title="User Login">
-                        &lt;svg width="20px" height="20px" viewBox="0 0 59 65">
-                            &lt;path d="M1193.6411,146.7246 C1200.1731,153.2546 1210.7991,153.2536 1217.3291,146.7246 C1220.4941,143.5606 1222.2361,139.3546 1222.2361,134.8806 C1222.2361,130.4066 1220.4941,126.2006 1217.3291,123.0366 C1214.1701,119.8786 1209.9641,118.1396 1205.4851,118.1396 C1201.0061,118.1396 1196.8001,119.8786 1193.6411,123.0366 C1190.4781,126.2006 1188.7361,130.4066 1188.7361,134.8806 C1188.7361,139.3556 1190.4781,143.5616 1193.6411,146.7246 L1193.6411,146.7246 Z M1205.4861,153.6206 C1200.6841,153.6206 1195.8831,151.7936 1192.2271,148.1386 C1188.6861,144.5986 1186.7361,139.8896 1186.7361,134.8806 C1186.7361,129.8716 1188.6861,125.1636 1192.2271,121.6226 C1195.7641,118.0866 1200.4721,116.1396 1205.4851,116.1396 C1210.4971,116.1396 1215.2061,118.0866 1218.7441,121.6226 C1222.2861,125.1636 1224.2361,129.8726 1224.2361,134.8806 C1224.2361,139.8896 1222.2861,144.5976 1218.7441,148.1396 C1215.0891,151.7936 1210.2871,153.6206 1205.4861,153.6206 L1205.4861,153.6206 Z M1218.4951,152.3096 L1235.1531,168.9686 C1236.3721,170.1866 1238.3551,170.1846 1239.5731,168.9686 C1240.7901,167.7496 1240.7901,165.7666 1239.5731,164.5486 L1222.9191,147.8956 L1223.3941,147.2096 C1225.9081,143.5756 1227.2361,139.3116 1227.2361,134.8806 C1227.2361,129.0716 1224.9731,123.6096 1220.8651,119.5016 C1216.7641,115.4006 1211.3021,113.1416 1205.4851,113.1416 C1199.6681,113.1416 1194.2061,115.3996 1190.1061,119.5016 C1185.9981,123.6096 1183.7361,129.0716 1183.7361,134.8806 C1183.7361,140.6906 1185.9981,146.1526 1190.1061,150.2606 C1194.2061,154.3616 1199.6681,156.6206 1205.4861,156.6206 C1209.9031,156.6206 1214.1641,155.2926 1217.8091,152.7826 L1218.4951,152.3096 Z M1237.3631,171.8806 C1236.0501,171.8806 1234.7381,171.3816 1233.7391,170.3826 L1218.2471,154.8916 C1214.4261,157.3336 1210.0321,158.6206 1205.4861,158.6206 C1199.1341,158.6206 1193.1701,156.1536 1188.6921,151.6746 C1184.2061,147.1896 1181.7361,141.2246 1181.7361,134.8806 C1181.7361,128.5376 1184.2061,122.5726 1188.6921,118.0876 C1193.1691,113.6086 1199.1341,111.1416 1205.4851,111.1416 L1205.4861,111.1416 C1211.8361,111.1416 1217.8001,113.6086 1222.2791,118.0876 C1226.7651,122.5736 1229.2361,128.5376 1229.2361,134.8806 C1229.2361,139.4396 1227.9481,143.8366 1225.5021,147.6506 L1240.9871,163.1346 C1242.9851,165.1326 1242.9851,168.3846 1240.9871,170.3826 C1239.9881,171.3816 1238.6751,171.8806 1237.3631,171.8806 L1237.3631,171.8806 Z" transform="translate(-1181.000000, -111.000000)">&lt;/path>
-                        &lt;/svg>
-                    &lt;/a>
-                &lt;/li>
-                &lt;!-- / Search -->
-                &lt;li class="tw-inline tw-m-0 tw-w-px tw-mx-6 tw-py-2 tw-bg-gray-400 tw-hidden sm:tw-block">&nbsp;&lt;/li>
-                &lt;!-- Login -->
-                &lt;li class="tw-inline tw-m-0 tw-hidden sm:tw-block">
-                &lt;a href="/customer/account/login/" title="User Login">
-                    &lt;svg width="20px" height="20px" viewBox="0 0 59 65">
-                            &lt;path d="M1211.67608,463 C1203.58508,463 1197.00308,469.582 1197.00308,477.673 C1197.00308,485.764 1203.58508,492.346 1211.67608,492.346 C1219.76708,492.346 1226.34908,485.764 1226.34908,477.673 C1226.34908,469.582 1219.76708,463 1211.67608,463 Z M1211.67608,494.346 C1202.48308,494.346 1195.00308,486.867 1195.00308,477.673 C1195.00308,468.479 1202.48308,461 1211.67608,461 C1220.86908,461 1228.34908,468.479 1228.34908,477.673 C1228.34908,486.867 1220.86908,494.346 1211.67608,494.346 Z M1235.06278,524.4839 C1236.21978,522.9969 1236.62278,521.1169 1236.16778,519.3259 L1231.56978,501.1879 C1230.84678,498.3369 1228.15778,496.3459 1225.02978,496.3459 L1222.12978,496.3459 C1219.17478,498.7269 1215.47778,500.0339 1211.67578,500.0339 C1207.87578,500.0339 1204.17778,498.7269 1201.22278,496.3459 L1198.45178,496.3459 C1195.34278,496.3459 1192.65778,498.3209 1191.91978,501.1499 L1187.19378,519.2889 C1186.72578,521.0839 1187.12078,522.9709 1188.27678,524.4669 C1189.55678,526.1249 1191.54278,527.0749 1193.72478,527.0749 L1229.62778,527.0749 C1231.80078,527.0749 1233.78178,526.1299 1235.06278,524.4839 Z M1238.10778,518.8349 C1238.71378,521.2279 1238.17978,523.7349 1236.64178,525.7119 C1234.97878,527.8489 1232.42178,529.0749 1229.62778,529.0749 L1193.72478,529.0749 C1190.91878,529.0749 1188.35578,527.8409 1186.69378,525.6899 C1185.15678,523.6999 1184.63278,521.1839 1185.25778,518.7849 L1189.98478,500.6449 C1190.95178,496.9359 1194.43278,494.3459 1198.45178,494.3459 L1201.94678,494.3459 L1202.22578,494.5819 C1204.86678,496.8079 1208.22278,498.0339 1211.67578,498.0339 C1215.12978,498.0339 1218.48678,496.8079 1221.12678,494.5819 L1221.40678,494.3459 L1225.02978,494.3459 C1229.07478,494.3459 1232.56078,496.9579 1233.50878,500.6959 L1238.10778,518.8349 Z" transform="translate(-1185.000000, -461.000000)">&lt;/path>
-                        &lt;/svg>
-                    &lt;/a>
-                &lt;/li>
-                &lt;!-- / Login -->
-                &lt;li class="tw-inline tw-m-0 tw-w-px tw-mx-6 tw-py-2 tw-bg-gray-400 tw-hidden sm:tw-block">&nbsp;&lt;/li>
-                &lt;!-- Cart -->
-                &lt;li class="tw-inline tw-m-0">
-                    &lt;a href="/checkout" class="dropdown-select userbasketcls" id="userbasketcls" title="Cart">
-                        &lt;svg width="20px" height="20px" viewBox="0 0 59 65">
-                            &lt;path d="M1197.98,252.1675 L1227.749,252.1675 C1227.582,242.1895 1220.969,234.1365 1212.865,234.1365 C1204.76,234.1365 1198.147,242.1895 1197.98,252.1675 L1197.98,252.1675 Z M1229.715,254.1675 L1196.013,254.1675 L1195.986,253.0285 C1195.981,252.8715 1195.977,252.7125 1195.977,252.5535 C1195.977,241.2955 1203.553,232.1365 1212.865,232.1365 C1222.176,232.1365 1229.751,241.2955 1229.751,252.5535 C1229.751,252.7125 1229.748,252.8715 1229.743,253.0285 L1229.715,254.1675 Z M1211.314,264.3745 C1210.718,264.3745 1210.234,264.8365 1210.234,265.4055 L1210.234,265.8345 C1210.234,266.4025 1210.718,266.8655 1211.314,266.8655 L1214.416,266.8655 C1215.01,266.8655 1215.495,266.4025 1215.495,265.8345 L1215.495,265.4055 C1215.495,264.8365 1215.01,264.3745 1214.416,264.3745 L1211.314,264.3745 Z M1214.416,268.8655 L1211.314,268.8655 C1209.616,268.8655 1208.234,267.5055 1208.234,265.8345 L1208.234,265.4055 C1208.234,263.7335 1209.616,262.3745 1211.314,262.3745 L1214.416,262.3745 C1216.114,262.3745 1217.495,263.7335 1217.495,265.4055 L1217.495,265.8345 C1217.495,267.5055 1216.114,268.8655 1214.416,268.8655 L1214.416,268.8655 Z M1191.876,254.2015 C1189.912,254.3855 1188.121,255.2975 1186.986,256.7205 C1185.948,258.0215 1185.571,259.5925 1185.923,261.1415 L1191.35,284.9345 C1191.976,287.6755 1194.788,289.6655 1198.038,289.6655 L1227.691,289.6655 C1230.941,289.6655 1233.752,287.6755 1234.378,284.9345 L1239.805,261.1415 C1240.148,259.6355 1239.797,258.1025 1238.818,256.8235 C1237.618,255.2565 1235.605,254.2705 1233.435,254.1845 L1232.453,254.1465 L1232.48,252.9525 C1232.484,252.8075 1232.488,252.6625 1232.488,252.5155 C1232.488,239.6265 1223.685,229.1415 1212.865,229.1415 C1202.142,229.1415 1193.4,239.4385 1193.243,252.1675 L1193.246,252.1675 L1193.246,252.8345 C1193.247,252.8745 1193.248,252.9135 1193.249,252.9525 L1193.254,253.1635 L1193.246,253.1645 L1193.246,254.1675 C1193.129,254.1675 1192.411,254.1805 1192.295,254.1845 L1191.876,254.2015 Z M1227.691,291.6655 L1198.038,291.6655 C1193.864,291.6655 1190.231,289.0215 1189.401,285.3785 L1183.974,261.5855 C1183.483,259.4315 1183.997,257.2605 1185.422,255.4735 C1186.806,253.7385 1188.917,252.5905 1191.242,252.2635 C1191.358,238.3885 1201.013,227.1415 1212.865,227.1415 C1224.718,227.1415 1234.376,238.3915 1234.487,252.2715 C1236.89,252.6005 1239.01,253.7855 1240.406,255.6065 C1241.753,257.3665 1242.233,259.4905 1241.754,261.5855 L1236.328,285.3785 C1235.498,289.0215 1231.865,291.6655 1227.691,291.6655 L1227.691,291.6655 Z" transform="translate(-1183.000000, -227.000000)">&lt;/path>
-                        &lt;/svg>
-                    &lt;/a>
-                &lt;/li>
-                &lt;!-- / Cart -->
-                &lt;li class="tw-inline tw-m-0 tw-w-px tw-mx-6 tw-py-2 tw-bg-gray-400 tw-hidden sm:tw-block">&nbsp;&lt;/li>
-                &lt;!-- Currency & Ship -->
-                &lt;li class="tw-inline tw-m-0 tw-hidden sm:tw-block">
-                &lt;div class="dropdown tw-inline-block tw-relative">
-                    &lt;button class="hover:tw-bg-transparent tw-bg-transparent hover:tw-border-0 tw-border-0 tw-p-0 tw-m-0 tw-w-10">
-                    &lt;img src="https://cdn-images.gabrielny.com/is/image/GabrielCo/us_flag?scl=1">
-                    &lt;/button>
-                &lt;/div>
-                &lt;/li>
-                &lt;!-- / Currency & Ship -->
-            &lt;/ul>
-            &lt;!-- /Right links -->
-        &lt;/div>
-        </code>
-    </pre>
+        <!-- Code BTN -->
+        <button v-on:click="open = !open" class="mdl-button mdl-js-button mdl-js-ripple-effect tw-my-4 tw-text-sm focus:tw-outline-none">Show Code</button>
+        <!-- Code -->
+        <pre v-show="open" class="tw-m-0">
+            <code class="html">
+                <div class="tw-border tw-border-gray-400 tw-border-solid tw-p-4 tw-overflow-scroll tw-max-w-60">    
+                    &lt;!-- Header Middle -->
+                    &lt;div class="tw-header-main tw-flex tw-justify-between tw-items-center tw-my-10 sm:tw-mx-16 tw-mx-10 sm:tw-h-16 tw-h-6">
+                        &lt;!-- Left links -->
+                        &lt;ul class="tw-list-none tw-flex tw-items-center tw-justify-start tw-w-1/4 tw-p-0 tw-m-0">
+                            &lt;li class="tw-inline tw-m-0 tw-hidden sm:tw-block">
+                            
+                                &lt;a class="tw-no-underline tw-flex tw-items-center" href="/storelocator" title="Find a Store">
+                                    &lt;!-- Find a Store Map Pin SVG -->
+                                    &lt;svg
+                                        width="15"
+                                        height="18"
+                                        viewBox="0 0 20 20"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        &lt;g clip-path="url(#clip0)">
+                                        &lt;path
+                                            d="M17.5 8.33325C17.5 14.1666 10 19.1666 10 19.1666C10 19.1666 2.5 14.1666 2.5 8.33325C2.5 6.34413 3.29018 4.43647 4.6967 3.02995C6.10322 1.62343 8.01088 0.833252 10 0.833252C11.9891 0.833252 13.8968 1.62343 15.3033 3.02995C16.7098 4.43647 17.5 6.34413 17.5 8.33325Z"
+                                            stroke="#898B99"
+                                            stroke-width="2"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                        />
+                                        &lt;path
+                                            d="M10 10.8333C11.3807 10.8333 12.5 9.71396 12.5 8.33325C12.5 6.95254 11.3807 5.83325 10 5.83325C8.61929 5.83325 7.5 6.95254 7.5 8.33325C7.5 9.71396 8.61929 10.8333 10 10.8333Z"
+                                            stroke="#898B99"
+                                            stroke-width="2"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                        />
+                                        &lt;/g>
+                                        &lt;defs>
+                                        &lt;clipPath id="clip0">
+                                            &lt;rect width="20" height="20" fill="white" />
+                                        &lt;/clipPath>
+                                        &lt;/defs>
+                                    &lt;/svg>
 
-</section>
+                                    &lt;p class="tw-text-gray-900 tw-font-sans tw-m-0 tw-ml-2" >Find a Store&lt;/p>
+                                &lt;/a>
+                            &lt;/li>
+                        
+                        &lt;/ul>
+                        &lt;!-- /Left links -->
+                        &lt;!-- Logo -->
+                        &lt;a class="tw-p-0 tw-m-0 tw-flex" href="https://magento.gcnydev.com/" aria-label="store logo">
+                            &lt;img src="https://cdn-themes.gabrielny.com/site2017theme/images/theme2019/svg/logo-theme2019.svg" title="" alt="" width="260">
+                        &lt;/a>
+                        &lt;!-- /Logo -->
+                        &lt;!-- Right links -->
+                        &lt;ul class="ltw-ist-none tw-flex tw-items-center tw-justify-end tw-w-1/4 tw-p-0 tw-m-0">
+                            &lt;!-- Search -->
+                            &lt;li class="tw-inline tw-mb-0 tw-mx-2">
+                                &lt;a href="/customer/account/login/" title="User Login">
+                                    &lt;svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        &lt;path d="M9.16667 15.8333C12.8486 15.8333 15.8333 12.8486 15.8333 9.16667C15.8333 5.48477 12.8486 2.5 9.16667 2.5C5.48477 2.5 2.5 5.48477 2.5 9.16667C2.5 12.8486 5.48477 15.8333 9.16667 15.8333Z" stroke="#898B99" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        &lt;path d="M17.5 17.5L13.875 13.875" stroke="#898B99" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    &lt;/svg>
+                                &lt;/a>
+                            &lt;/li>
+                            &lt;!-- / Search -->
+                            &lt;!-- Wishlist -->
+                            &lt;li class="tw-inline tw-mb-0 tw-mx-2 tw-hidden sm:tw-block">
+                                &lt;a href="/customer/account/wishlist/" title="User Wishlist">
+                                    &lt;svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        &lt;path d="M17.3671 3.84172C16.9415 3.41589 16.4361 3.0781 15.8799 2.84763C15.3237 2.61716 14.7275 2.49854 14.1254 2.49854C13.5234 2.49854 12.9272 2.61716 12.371 2.84763C11.8147 3.0781 11.3094 3.41589 10.8838 3.84172L10.0004 4.72506L9.11709 3.84172C8.25735 2.98198 7.09129 2.49898 5.87542 2.49898C4.65956 2.49898 3.4935 2.98198 2.63376 3.84172C1.77401 4.70147 1.29102 5.86753 1.29102 7.08339C1.29102 8.29925 1.77401 9.46531 2.63376 10.3251L3.51709 11.2084L10.0004 17.6917L16.4838 11.2084L17.3671 10.3251C17.7929 9.89943 18.1307 9.39407 18.3612 8.83785C18.5917 8.28164 18.7103 7.68546 18.7103 7.08339C18.7103 6.48132 18.5917 5.88514 18.3612 5.32893C18.1307 4.77271 17.7929 4.26735 17.3671 3.84172V3.84172Z" stroke="#898B99" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    &lt;/svg>
+                                &lt;/a>
+                            &lt;/li>
+                            &lt;!-- / Wishlist -->
+                            &lt;!-- Login -->
+                            &lt;li class="tw-inline tw-mb-0 tw-mx-2 tw-hidden sm:tw-block">
+                                &lt;a href="/customer/account/login/" title="User Login">
+                                    &lt;svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        &lt;path d="M16.6663 17.5V15.8333C16.6663 14.9493 16.3151 14.1014 15.69 13.4763C15.0649 12.8512 14.2171 12.5 13.333 12.5H6.66634C5.78229 12.5 4.93444 12.8512 4.30932 13.4763C3.6842 14.1014 3.33301 14.9493 3.33301 15.8333V17.5" stroke="#898B99" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        &lt;path d="M10.0003 9.16667C11.8413 9.16667 13.3337 7.67428 13.3337 5.83333C13.3337 3.99238 11.8413 2.5 10.0003 2.5C8.15938 2.5 6.66699 3.99238 6.66699 5.83333C6.66699 7.67428 8.15938 9.16667 10.0003 9.16667Z" stroke="#898B99" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    &lt;/svg>
+                                &lt;/a>
+                            &lt;/li>
+                            &lt;!-- / Login -->
+                            &lt;!-- Cart -->
+                            &lt;li class="tw-inline tw-mb-0 tw-mx-2">
+                                &lt;a href="/checkout" class="dropdown-select userbasketcls" id="userbasketcls" title="Cart">
+                                &lt;svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        &lt;path d="M5 1.66675L2.5 5.00008V16.6667C2.5 17.1088 2.67559 17.5327 2.98816 17.8453C3.30072 18.1578 3.72464 18.3334 4.16667 18.3334H15.8333C16.2754 18.3334 16.6993 18.1578 17.0118 17.8453C17.3244 17.5327 17.5 17.1088 17.5 16.6667V5.00008L15 1.66675H5Z" stroke="#898B99" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        &lt;path d="M2.5 5H17.5" stroke="#898B99" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        &lt;path d="M13.3337 8.33325C13.3337 9.21731 12.9825 10.0652 12.3573 10.6903C11.7322 11.3154 10.8844 11.6666 10.0003 11.6666C9.11627 11.6666 8.26842 11.3154 7.6433 10.6903C7.01818 10.0652 6.66699 9.21731 6.66699 8.33325" stroke="#898B99" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    &lt;/svg>
+                                &lt;/a>
+                            &lt;/li>
+                            &lt;!-- / Cart -->
+                            &lt;!-- Currency & Ship -->
+                            &lt;!--&lt;li class="tw-inline tw-m-0 tw-hidden sm:tw-block">
+                                &lt;div class="dropdown tw-inline-block tw-relative">
+                                    &lt;button class="hover:tw-bg-transparent tw-bg-transparent hover:tw-border-0 tw-border-0 tw-p-0 tw-m-0 tw-w-10">
+                                    &lt;img src="https://cdn-images.gabrielny.com/is/image/GabrielCo/us_flag?scl=1">
+                                    &lt;/button>
+                                &lt;/div>
+                            &lt;/li>-->
+                            &lt;!-- / Currency & Ship -->
+                        &lt;/ul>
+                        &lt;!-- /Right links -->
+                    &lt;/div>
+                </div>
+            </code>
+        </pre>
+
+    </section>
 </template>
 
 <script>
