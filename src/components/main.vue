@@ -17,6 +17,8 @@
         <StoreHeader></StoreHeader>
         <PostCard></PostCard>
         <AlertMessages></AlertMessages>
+        <breakpoint-test></breakpoint-test>
+        <popular-searches></popular-searches>
 
       </div>
     </div>
@@ -40,11 +42,15 @@ import StoreHeader from "@/components/main/stores/StoreHeader";
 import PostCard from "@/components/main/media_pages/PostCard";
 import StoreLocatorCard from "@/components/main/store_locator/StoreLocatorCard";
 import AlertMessages from "@/components/main/AlertMessages";
+import PopularSearches from "@/components/seo_contents/PopularSearches";
+import BreakpointTest from "@/components/BreakpointTest";
 
 
 export default {
   name: 'Main',
   components: {
+    BreakpointTest,
+    PopularSearches,
     AlertMessages,
     StoreHeader,
     Intro,

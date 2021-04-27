@@ -1,3 +1,4 @@
+// Source: https://gist.github.com/loilo/d30d5f384fa62b1de8cdccc467cce139
 import throttle from 'lodash/throttle'
 import ResizeObserver from 'resize-observer-polyfill'
 

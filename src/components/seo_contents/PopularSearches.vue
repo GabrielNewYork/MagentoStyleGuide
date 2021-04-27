@@ -1,30 +1,39 @@
 <template>
-  <div>
-    <splitpanes class="default-theme" style="height: 400px">
-      <pane>
 
-        <div class="tw-h-full tw-bg-blue-400 md:tw-bg-red-400 lg:tw-bg-green-200 xl:tw-bg-yellow-100">
-          Teste de cor
+    <render-component>
+
+      <div class="tw-p-6">
+        <div class="PopularSearches">
+          <header class="tw-flex tw-flex-row md:tw-block">
+            <span class="tw-h-1 tw-w-8 tw-h-2 md:tw-w-16 tw-block tw-bg-black"></span>
+            <div class="tw-text-2xl tw-font-lora tw-py-10 tw-leading-9">Popular Searches</div>
+          </header>
+          <ul class="tw-list-none">
+            <li class="tw-py-4"><a class="tw-font-sans tw-text-slg tw-underline tw-text-black hover:tw-text-red-base" href="https://www.gabrielny.com/engagement-rings/vintage-engagement-rings">Vintage Style Engagement Rings</a></li>
+            <li class="tw-py-4"><a class="tw-font-sans tw-text-slg tw-underline tw-text-black hover:tw-text-red-base" href="https://www.gabrielny.com/engagement-rings/vintage-engagement-rings">Vintage Style Engagement Rings</a></li>
+            <li class="tw-py-4"><a class="tw-font-sans tw-text-slg tw-underline tw-text-black hover:tw-text-red-base" href="https://www.gabrielny.com/engagement-rings/vintage-engagement-rings">Vintage Style Engagement Rings</a></li>
+            <li class="tw-py-4"><a class="tw-font-sans tw-text-slg tw-underline tw-text-black hover:tw-text-red-base" href="https://www.gabrielny.com/engagement-rings/vintage-engagement-rings">Vintage Style Engagement Rings</a></li>
+            <li class="tw-py-4"><a class="tw-font-sans tw-text-slg tw-underline tw-text-black hover:tw-text-red-base" href="https://www.gabrielny.com/engagement-rings/vintage-engagement-rings">Vintage Style Engagement Rings</a></li>
+            <li class="tw-py-4"><a class="tw-font-sans tw-text-slg tw-underline tw-text-black hover:tw-text-red-base" href="https://www.gabrielny.com/engagement-rings/vintage-engagement-rings">Vintage Style Engagement Rings</a></li>
+            <li class="tw-py-4"><a class="tw-font-sans tw-text-slg tw-underline tw-text-black hover:tw-text-red-base" href="https://www.gabrielny.com/engagement-rings/vintage-engagement-rings">Vintage Style Engagement Rings</a></li>
+            <li class="tw-py-4"><a class="tw-font-sans tw-text-slg tw-underline tw-text-black hover:tw-text-red-base" href="https://www.gabrielny.com/engagement-rings/vintage-engagement-rings">Vintage Style Engagement Rings</a></li>
+          </ul>
         </div>
 
-      </pane>
-      <pane>
-        <span>Teste</span>
-      </pane>
-    </splitpanes>
-    <br/>
-    <br/>
-  </div>
+      </div>
+
+    </render-component>
+
 
 </template>
 
 <script>
-import {Splitpanes, Pane} from 'splitpanes';
-import 'splitpanes/dist/splitpanes.css';
 
+
+import RenderComponent from "@/components/support/RenderComponent";
 export default {
   name: "PopularSearches",
-  components: {Splitpanes, Pane},
+  components: {RenderComponent},
 }
 </script>
 

@@ -24,6 +24,22 @@ module.exports = {
     },
     prefix: 'tw-',
     theme: {
+        screens: {
+            'sm': '640px',
+            // => @media (min-width: 640px) { ... }
+
+            'md': '768px',
+            // => @media (min-width: 768px) { ... }
+
+            'lg': '1024px',
+            // => @media (min-width: 1024px) { ... }
+
+            'xl': '1280px',
+            // => @media (min-width: 1280px) { ... }
+
+            '2xl': '1536px',
+            // => @media (min-width: 1536px) { ... }
+        },
         container: {
             center: true,
             padding: {
@@ -89,6 +105,7 @@ module.exports = {
             'sm': '1rem', // - 0.275
             'tiny': '1.275rem', // - 0.125 
             'base': '1.4rem', // 1.4
+            'slg': '1.4rem',
             'lg': '1.525rem', // + .125
             'xl': '1.650rem', // + .125
             '2xl': '1.900rem', // + .250
