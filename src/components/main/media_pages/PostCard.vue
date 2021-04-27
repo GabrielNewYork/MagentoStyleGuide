@@ -41,25 +41,29 @@
         <div>
           <render-component>
 
-
-            <a href="#"
-               class="MediaPageCoverCard tw-flex tw-flex-col md:tw-flex-row tw-border tw-border-solid tw-border-gray-200 hover:tw-border-gray-400 tw-cursor-pointer">
-              <figure class="md:tw-w-1/2 tw-m-0">
-                <img class="tw-w-full tw-m-0 tw-block"
-                     src="http://images.gabrielny.com/is/image/GabrielCo/Instyle-Cover-December2020?$Default$"
-                     alt="<?= $heroImgAlt?>">
-              </figure>
-              <div class="tw-flex-1 tw-p-12 tw-flex tw-flex-col tw-items-center tw-justify-center">
-                <h2 class="tw-uppercase tw-m-0 tw-mb-8 tw-text-dark01 tw-font-sans tw-w-full tw-text-center tw-text-xl tw-leading-12 tw-tracking-wide">
-                  November 2020
-                </h2>
-                <div
-                    class="tw-text-dark01 tw-font-sans tw-w-full tw-text-center tw-text-lg tw-leading-12 tw-tracking-wide">
-                  “Your Most Picky Relatives Are No Match for InStyle’s Editors Picks Gift Guide” Gabriel&Co.’s 14K
-                  Yellow Gold Heart Plain Pendant Necklace included on InStyle.com.
-                </div>
-              </div>
-            </a>
+            <div class="tw-mt-12 tw-px-12 md:tw-px-0 tw-grid tw-grid-cols-1 md:tw-grid-cols-2 tw-gap-12">
+              <template v-for="$n in 4">
+                <a href="#"
+                   :key="$n"
+                   class="MediaPageCoverCard tw-flex tw-flex-col md:tw-flex-row tw-border tw-border-solid tw-border-gray-200 hover:tw-border-gray-400 tw-cursor-pointer">
+                  <figure class="md:tw-w-1/2 tw-m-0">
+                    <img class="tw-w-full tw-m-0 tw-block"
+                         src="http://images.gabrielny.com/is/image/GabrielCo/Instyle-Cover-December2020?$Default$"
+                         alt="<?= $heroImgAlt?>">
+                  </figure>
+                  <div class="tw-flex-1 tw-p-12 tw-flex tw-flex-col tw-items-center tw-justify-center">
+                    <h2 class="tw-uppercase tw-m-0 tw-mb-8 tw-text-dark01 tw-font-sans tw-w-full tw-text-center tw-text-xl tw-leading-12 tw-tracking-wide">
+                      November 2020
+                    </h2>
+                    <div
+                        class="tw-text-dark01 tw-font-sans tw-w-full tw-text-center tw-text-lg tw-leading-12 tw-tracking-wide">
+                      “Your Most Picky Relatives Are No Match for InStyle’s Editors Picks Gift Guide” Gabriel&Co.’s 14K
+                      Yellow Gold Heart Plain Pendant Necklace included on InStyle.com.
+                    </div>
+                  </div>
+                </a>
+              </template>
+            </div>
           </render-component>
         </div>
 
