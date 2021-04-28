@@ -19,6 +19,7 @@
         <AlertMessages></AlertMessages>
         <breakpoint-test></breakpoint-test>
         <popular-searches></popular-searches>
+        <blog-posts></blog-posts>
 
       </div>
     </div>
@@ -44,11 +45,13 @@ import StoreLocatorCard from "@/components/main/store_locator/StoreLocatorCard";
 import AlertMessages from "@/components/main/AlertMessages";
 import PopularSearches from "@/components/seo_contents/PopularSearches";
 import BreakpointTest from "@/components/BreakpointTest";
+import BlogPosts from "@/components/seo_contents/BlogPosts";
 
 
 export default {
   name: 'Main',
   components: {
+    BlogPosts,
     BreakpointTest,
     PopularSearches,
     AlertMessages,
