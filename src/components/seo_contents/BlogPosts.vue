@@ -10,7 +10,7 @@
         </header>
         <div class="tw-grid sm:tw-grid-cols-2 md:tw-grid-cols-3 tw-gap-6">
           <template v-for="$index in 3">
-            <a href="#" class="BlogPostsCard tw-mb-12" :key="$index">
+            <a href="#" class="BlogPostsCard tw-mb-12 tw-group" :key="$index">
               <div aria-hidden="true">
                 <img
                     class="tw-w-full"
@@ -18,8 +18,8 @@
                     alt="">
               </div>
               <div class="tw-mt-4 tw-px-6">
-                <h3 class="tw-text-black tw-text-xl tw-font-lora">I Don't Like My Engagement Ring, Now What?</h3>
-                <p class="tw-font-sans">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vel neque nunc. Sed facilisis sed
+                <h3 class="tw-text-black tw-text-xl tw-font-lora tw-no-underline group-hover:tw-text-red-base">I Don't Like My Engagement Ring, Now What?</h3>
+                <p class="tw-font-sans  tw-no-underline tw-text-black">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vel neque nunc. Sed facilisis sed
                   tellus nec volutpat. Sed eget nisl ipsum. Ut id eros ut arcu consequat ultrices porttitor eget
                   nisi.</p>
               </div>

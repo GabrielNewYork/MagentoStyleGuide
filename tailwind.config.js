@@ -1,5 +1,5 @@
-// const magentoPath = '/Users/leo/Projetos/SmartAgeSolutions/Gabriel.co/Magento/';
-const magentoPath = '/home/mariamussi/Gabriel&Co/www';
+const magentoPath = '/Users/leo/Projetos/SmartAgeSolutions/Gabriel.co/Magento/';
+// const magentoPath = '/home/mariamussi/Gabriel&Co/www';
 
 module.exports = {
     purge: {
@@ -103,7 +103,8 @@ module.exports = {
             'xs': '0.750rem', // -0.150
             'small': '0.900rem', // -0.1
             'sm': '1rem', // - 0.275
-            'tiny': '1.275rem', // - 0.125 
+            'tiny': '1.275rem', // - 0.125
+            'rg': '1.3rem',
             'base': '1.4rem', // 1.4
             'slg': '1.4rem',
             'lg': '1.525rem', // + .125
@@ -118,6 +119,7 @@ module.exports = {
     },
     variants: {
         borderWidth: ['last'],
+        textColor: ['group-hover'],
     },
     plugins: [],
 }

@@ -18,8 +18,14 @@
         <PostCard></PostCard>
         <AlertMessages></AlertMessages>
         <breakpoint-test></breakpoint-test>
-        <popular-searches></popular-searches>
+
         <blog-posts></blog-posts>
+        <render-component>
+          <div class="tw-py-16">
+            <combo></combo>
+          </div>
+        </render-component>
+
 
       </div>
     </div>
@@ -29,7 +35,7 @@
 
 
 <script>
-
+import RenderComponent from "@/components/support/RenderComponent";
 import Intro from '../components/main/intro'
 import Designing from '../components/main/designing'
 import Header from '../components/main/header'
@@ -46,11 +52,16 @@ import AlertMessages from "@/components/main/AlertMessages";
 import PopularSearches from "@/components/seo_contents/PopularSearches";
 import BreakpointTest from "@/components/BreakpointTest";
 import BlogPosts from "@/components/seo_contents/BlogPosts";
+import Faq from "@/components/seo_contents/Faq";
+import Combo from "@/components/seo_contents/Combo";
 
 
 export default {
   name: 'Main',
   components: {
+    RenderComponent,
+    Combo,
+    Faq,
     BlogPosts,
     BreakpointTest,
     PopularSearches,

@@ -1,8 +1,6 @@
 <template>
 
-    <render-component>
 
-      <div class="tw-p-6">
         <div class="PopularSearches">
           <header class="tw-flex tw-flex-row md:tw-block">
             <span class="tw-h-1 tw-w-8 tw-h-2 md:tw-w-16 tw-block tw-bg-black"></span>
@@ -20,9 +18,6 @@
           </ul>
         </div>
 
-      </div>
-
-    </render-component>
 
 
 </template>
