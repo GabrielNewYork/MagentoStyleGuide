@@ -6,7 +6,6 @@ const dotenv = require('dotenv').config({
 
 const {MAGENTO_PATH} = dotenv.parsed;
 
-console.log(MAGENTO_PATH, dotenv.parsed);
 module.exports = {
     purge: {
         content: [
