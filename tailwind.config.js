@@ -1,18 +1,24 @@
-const magentoPath = '/Users/leo/Projetos/SmartAgeSolutions/Gabriel.co/Magento/';
-// const magentoPath = '/home/mariamussi/Gabriel&Co/www';
+const path = require("path");
 
+const dotenv = require('dotenv').config({
+    path: path.join(__dirname, '.env')
+});
+
+const {MAGENTO_PATH} = dotenv.parsed;
+
+console.log(MAGENTO_PATH, dotenv.parsed);
 module.exports = {
     purge: {
         content: [
             './src/components/**/*.html',
             './src/components/**/*.vue',
             // Path to magento project
-            `${magentoPath}/app/**/*.phtml`,
-            `${magentoPath}/app/**/*.html`,
-            `${magentoPath}/app/**/*.js`,
-            `${magentoPath}/docs/**/*.phtml`,
-            `${magentoPath}/docs/**/*.html`,
-            `${magentoPath}/docs/**/*.js`,
+            `${MAGENTO_PATH}/app/**/*.phtml`,
+            `${MAGENTO_PATH}/app/**/*.html`,
+            `${MAGENTO_PATH}/app/**/*.js`,
+            `${MAGENTO_PATH}/docs/**/*.phtml`,
+            `${MAGENTO_PATH}/docs/**/*.html`,
+            `${MAGENTO_PATH}/docs/**/*.js`,
         ],
         // These options are passed through directly to PurgeCSS
         options: {
@@ -86,7 +92,7 @@ module.exports = {
                 'red-base': '#E61E19',
                 'red-light': '#F07875',
                 'red-lightest': '#FAD2D1',
-                'gray-darkest': '#575965',
+                'gray-darkest': '#575965', // brand-secondary-darkest
                 'gray-dark': '#6F7181',
                 'gray-base': '#898B99',
                 'gray-light': '#C0C1C9',
@@ -96,7 +102,34 @@ module.exports = {
                 'dark02': '#525252',
                 'dark03': '#7A7A7A',
                 'gray-theme-hero': '#CACACA',
-                'gray-theme-light': '#F4F4F4'
+                'gray-theme-light': '#F4F4F4',
+
+                'brand-primary': {
+                    DEFAULT: '#E61E19',
+                    'base': '#E61E19',
+                    'lightest': '#FAD2D1'
+                },
+                'brand-secondary': {
+                    DEFAULT: '#898B99',
+                    'base': '#898B99',
+                    'light': '#DBDCE0',
+                    'lightest': '#EFEFF1',
+                    'darkest': '#575965'
+                },
+                'neutral-light': {
+                    DEFAULT: '#FFFFFF',
+                    'base': '#FFFFFF',
+                    '1': '#F4F4F4',
+                    '2': '#E0E0E0',
+                    '3': '#D1D1D1'
+                },
+                'neutral-dark': {
+                    DEFAULT: '#FFFFFF',
+                    'base': '#FFFFFF',
+                    '1': '#E0E0E0',
+                    '2': '#525252',
+                    '3': '#7A7A7A'
+                }
             },
         },
         fontSize: {

@@ -1,12 +1,7 @@
 <template>
   <div class="tw-relative tw-my-40">
-<!--    <p>-->
-<!--      Strategy:-->
-<!--      <button class="button" @click="desktopFirst = !desktopFirst">-->
-<!--        {{ desktopFirst ? 'desktop-first' : 'mobile-first' }}-->
-<!--      </button>-->
-<!--    </p>-->
 
+    <h2>{{componentTitle}}</h2>
     <ResponsiveContainer
         :default-breakpoint="desktopFirst ? 'desktop' : 'phone'"
         :breakpoints="breakpoints"
@@ -17,7 +12,9 @@
       <template slot-scope="container">
         <div class="w-full">
           <i-frame style="height: 600px;">
-            <slot></slot>
+            <div class="tw-py-16">
+              <slot></slot>
+            </div>
           </i-frame>
         </div>
         <div class="tw-bg-gray-200">
@@ -57,6 +54,11 @@ import ResponsiveContainer from "./ResponsiveContainer";
 
 export default {
   name: "RenderComponent",
+  props: {
+    componentTitle: {
+      default: 'Component name'
+    },
+  },
   components: {
     ResponsiveContainer
   },

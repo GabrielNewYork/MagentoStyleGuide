@@ -13,13 +13,12 @@
 </template>
 
 <script>
-import RenderComponent from "@/components/support/RenderComponent";
 import PopularSearches from "@/components/seo_contents/PopularSearches";
 import Faq from "@/components/seo_contents/Faq";
 
 export default {
   name: "Combo",
-  components: {Faq, PopularSearches, RenderComponent}
+  components: {Faq, PopularSearches}
 }
 </script>
 

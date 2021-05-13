@@ -20,11 +20,20 @@
         <breakpoint-test></breakpoint-test>
 
         <blog-posts></blog-posts>
-        <render-component>
+        <render-component component-title="SEO Content">
           <div class="tw-py-16">
             <combo></combo>
           </div>
         </render-component>
+
+        <render-component component-title="Contact form">
+            <contact-form></contact-form>
+        </render-component>
+
+        <render-component component-title="Contact Page">
+          <contact-page></contact-page>
+        </render-component>
+
 
 
       </div>
@@ -49,22 +58,24 @@ import StoreHeader from "@/components/main/stores/StoreHeader";
 import PostCard from "@/components/main/media_pages/PostCard";
 import StoreLocatorCard from "@/components/main/store_locator/StoreLocatorCard";
 import AlertMessages from "@/components/main/AlertMessages";
-import PopularSearches from "@/components/seo_contents/PopularSearches";
 import BreakpointTest from "@/components/BreakpointTest";
 import BlogPosts from "@/components/seo_contents/BlogPosts";
-import Faq from "@/components/seo_contents/Faq";
 import Combo from "@/components/seo_contents/Combo";
+import ContactForm from "@/components/forms/ContactForm";
+import ContactPage from "@/components/main/ContactPage";
 
 
 export default {
   name: 'Main',
   components: {
+    ContactPage,
+    ContactForm,
     RenderComponent,
     Combo,
-    Faq,
+
     BlogPosts,
     BreakpointTest,
-    PopularSearches,
+
     AlertMessages,
     StoreHeader,
     Intro,
