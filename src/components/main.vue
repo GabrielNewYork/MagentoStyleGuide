@@ -34,6 +34,10 @@
           <contact-page></contact-page>
         </render-component>
 
+        <render-component component-title="Buttons">
+          <buttons></buttons>
+        </render-component>
+
 
 
       </div>
@@ -63,11 +67,13 @@ import BlogPosts from "@/components/seo_contents/BlogPosts";
 import Combo from "@/components/seo_contents/Combo";
 import ContactForm from "@/components/forms/ContactForm";
 import ContactPage from "@/components/main/ContactPage";
+import Buttons from "@/components/Buttons";
 
 
 export default {
   name: 'Main',
   components: {
+    Buttons,
     ContactPage,
     ContactForm,
     RenderComponent,

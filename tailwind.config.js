@@ -105,11 +105,13 @@ module.exports = {
 
                 'brand-primary': {
                     DEFAULT: '#E61E19',
+                    default: '#E61E19',
                     'base': '#E61E19',
                     'lightest': '#FAD2D1'
                 },
                 'brand-secondary': {
                     DEFAULT: '#898B99',
+                    default: '#898B99',
                     'base': '#898B99',
                     'light': '#DBDCE0',
                     'lightest': '#EFEFF1',
@@ -117,14 +119,13 @@ module.exports = {
                 },
                 'neutral-light': {
                     DEFAULT: '#FFFFFF',
+                    default: '#FFFFFF',
                     'base': '#FFFFFF',
                     '1': '#F4F4F4',
                     '2': '#E0E0E0',
                     '3': '#D1D1D1'
                 },
                 'neutral-dark': {
-                    DEFAULT: '#FFFFFF',
-                    'base': '#FFFFFF',
                     '1': '#E0E0E0',
                     '2': '#525252',
                     '3': '#7A7A7A'
@@ -150,8 +151,9 @@ module.exports = {
         }
     },
     variants: {
+        borderColor: ['hover'],
         borderWidth: ['last'],
-        textColor: ['group-hover'],
+        textColor: ['group-hover', 'hover'],
     },
     plugins: [],
 }

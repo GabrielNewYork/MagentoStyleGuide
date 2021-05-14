@@ -24,11 +24,8 @@
 
 <script>
 
-
-import RenderComponent from "@/components/support/RenderComponent";
 export default {
   name: "PopularSearches",
-  components: {RenderComponent},
 }
 </script>
 

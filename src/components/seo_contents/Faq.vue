@@ -25,11 +25,11 @@
 </template>
 
 <script>
-import RenderComponent from "@/components/support/RenderComponent";
+
 
 export default {
   name: "Faq",
-  components: {RenderComponent}
+
 }
 </script>
 
