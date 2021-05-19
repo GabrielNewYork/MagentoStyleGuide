@@ -12,7 +12,7 @@
     </a>
 
     <!-- Content -->
-    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer">
+    <div class="tw-flex mdl-layout mdl-js-layout mdl-layout--fixed-drawer">
       <Menu v-show="!open"></Menu>
       <Main v-bind:class="{ 'expanded' : open}"></Main>
     </div>

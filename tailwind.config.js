@@ -117,6 +117,11 @@ module.exports = {
                     'lightest': '#EFEFF1',
                     'darkest': '#575965'
                 },
+                'brand-dark': {
+                    DEFAULT: '#382E2C',
+                    default: '#382E2C',
+                    'base': '#382E2C'
+                },
                 'neutral-light': {
                     DEFAULT: '#FFFFFF',
                     default: '#FFFFFF',
@@ -128,7 +133,7 @@ module.exports = {
                 'neutral-dark': {
                     '1': '#E0E0E0',
                     '2': '#525252',
-                    '3': '#7A7A7A'
+                    '3': '#7A7A7A',
                 }
             },
         },
@@ -154,6 +159,7 @@ module.exports = {
         borderColor: ['hover'],
         borderWidth: ['last'],
         textColor: ['group-hover', 'hover'],
+        animation: ['hover', 'focus'],
     },
     plugins: [],
 }

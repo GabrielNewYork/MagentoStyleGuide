@@ -1,7 +1,7 @@
 <template>
   <div class="tw-relative tw-my-40">
 
-    <h2>{{componentTitle}}</h2>
+    <h2 class="tw-text-4xl tw-mb-4">{{componentTitle}}</h2>
     <ResponsiveContainer
         :default-breakpoint="desktopFirst ? 'desktop' : 'phone'"
         :breakpoints="breakpoints"
@@ -11,7 +11,7 @@
     >
       <template slot-scope="container">
         <div class="w-full">
-          <i-frame style="height: 600px;">
+          <i-frame style="height: 600px;width: 100%;">
             <div class="tw-py-16">
               <slot></slot>
             </div>
