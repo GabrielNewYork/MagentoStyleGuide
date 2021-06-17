@@ -29,6 +29,18 @@ module.exports = {
     },
     prefix: 'tw-',
     theme: {
+        zIndex: {
+            '0': 0,
+            '10': 10,
+            '20': 20,
+            '25': 25,
+            '30': 30,
+            '40': 40,
+            '50': 50,
+            '75': 75,
+            '100': 100,
+            'auto': 'auto',
+        },
         screens: {
             'sm': '640px',
             // => @media (min-width: 640px) { ... }
@@ -107,7 +119,17 @@ module.exports = {
                     DEFAULT: '#E61E19',
                     default: '#E61E19',
                     'base': '#E61E19',
-                    'lightest': '#FAD2D1'
+                    'lightest': '#FAD2D1',
+                    '50': '#FDE8E8',
+                    '100': '#FAD2D1',
+                    '200': '#F5A5A3',
+                    '300': '#F07875',
+                    '400': '#EB4B47',
+                    '500': '#E61E19',
+                    '600': '#B81814',
+                    '700': '#8A120F',
+                    '800': '#5C0C0A',
+                    '900': '#2E0605'
                 },
                 'brand-secondary': {
                     DEFAULT: '#898B99',

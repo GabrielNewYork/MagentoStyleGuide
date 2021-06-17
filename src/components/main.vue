@@ -3,7 +3,26 @@
   <main class="mdl-layout__content">
     <div class="page-content">
       <div class="tw-mx-40">
-
+        <render-component component-title="Alert Messages">
+          <div class="tw-p-16">
+            <AlertMessageBlock></AlertMessageBlock>
+          </div>
+        </render-component>
+        <render-component component-title="Reset Password">
+          <div class="tw-p-16">
+            <ResetPassword></ResetPassword>
+          </div>
+        </render-component>
+        <render-component component-title="Filter Bar">
+          <div class="tw-p-16">
+            <FilterBar></FilterBar>
+          </div>
+        </render-component>
+        <render-component component-title="Active Filters">
+          <div class="tw-p-16">
+            <ContentFilter></ContentFilter>
+          </div>
+        </render-component>
         <Intro></Intro>
         <Designing></Designing>
         <Styles></Styles>
@@ -68,11 +87,19 @@ import Combo from "@/components/seo_contents/Combo";
 import ContactForm from "@/components/forms/ContactForm";
 import ContactPage from "@/components/main/ContactPage";
 import Buttons from "@/components/Buttons";
+import ContentFilter from "@/components/page-filter/ContentFilter";
+import FilterBar from "@/components/page-filter/FilterBar";
+import ResetPassword from "@/components/forms/ResetPassword";
+import AlertMessageBlock from "@/components/AlertMessageBlock";
 
 
 export default {
   name: 'Main',
   components: {
+    AlertMessageBlock,
+    ResetPassword,
+    FilterBar,
+    ContentFilter,
     Buttons,
     ContactPage,
     ContactForm,
