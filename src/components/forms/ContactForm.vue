@@ -65,6 +65,15 @@
         <button class="tw-rounded tw-bg-black tw-text-xl tw-py-6 tw-px-16 tw-text-white tw-transition tw-duration-300 hover:tw-bg-brand-primary">Send</button>
       </div>
 
+      <div class="tw-mb-8">
+        <label for="name" class="tw-font-sans tw-font-light tw-text-brand-secondary-darkest tw-text-rg tw-mb-4">tw-input-text + tw-text-xl tw-p-6</label>
+        <div class="tw-flex tw-mb-8">
+          <textarea id="name" placeholder="What's your name?" class="tw-input-text tw-text-xl tw-p-2">
+          </textarea>
+        </div>
+        <button class="tw-rounded tw-bg-black tw-text-xl tw-py-6 tw-px-16 tw-text-white tw-transition tw-duration-300 hover:tw-bg-brand-primary">Send</button>
+      </div>
+
 
     </form>
   </div>

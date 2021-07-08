@@ -1,8 +1,11 @@
 <template>
   <form action="https://gabrielny.test/customer/account/resetpasswordpost/?token=YjtPkVeA1DSrWXo8hZlsBkkX3n5aziS1" method="post" autocomplete="off" id="form-validate"
-        class="form password reset tw-max-w-2xl tw-bg-red-500 tw-py-16 tw-px-8 md:tw-px-0 tw-m-auto" novalidate="novalidate">
+        class="form password reset tw-max-w-2xl tw-py-16 tw-px-8 md:tw-px-0 tw-m-auto" novalidate="novalidate">
     <fieldset class="fieldset " data-hasrequired="* Required Fields">
-      <div class="tw-bg-red-500">Meu nome</div>
+
+      <div class="lg:tw-bg-red-500">Meu nome</div>
+
+
       <div class="field password required tw-mb-4">
         <label class="label tw-text-rg" for="password"><span>New Password</span></label>
         <div class="control">
