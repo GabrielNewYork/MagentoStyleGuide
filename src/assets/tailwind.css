@@ -42,13 +42,8 @@ html {
         @apply tw-rotate-180;
     }
 
-    /* Buttons */
-    .tw-btn-black {
-        @apply tw-rounded tw-bg-black tw-text-white tw-transition tw-duration-300;
-    }
-    .tw-btn-black:hover {
-        @apply tw-bg-brand-primary;
-    }
+    @import "css/_buttons.css";
+
     @import "css/_alert-message-block.css";
 }
 

@@ -3,6 +3,11 @@
   <main class="mdl-layout__content">
     <div class="page-content">
       <div class="tw-mx-40">
+        <render-component component-title="Cart Sidebar">
+          <div class="tw-p-16">
+            <CartSidebar></CartSidebar>
+          </div>
+        </render-component>
         <render-component component-title="Teste com João">
           <div class="tw-p-16">
             <TestJoao></TestJoao>
@@ -97,11 +102,13 @@ import FilterBar from "@/components/page-filter/FilterBar";
 import ResetPassword from "@/components/forms/ResetPassword";
 import AlertMessageBlock from "@/components/AlertMessageBlock";
 import TestJoao from "@/components/TestJoao";
+import CartSidebar from "@/components/CartSidebar";
 
 
 export default {
   name: 'Main',
   components: {
+    CartSidebar,
     TestJoao,
     AlertMessageBlock,
     ResetPassword,

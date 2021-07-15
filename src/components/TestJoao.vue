@@ -9,7 +9,6 @@
       <div class="tw-p-16">BREAK</div>
       <div :class="{'tw-text-brand-primary tw-text-xs tw-bg-purple-500': active, 'tw-bg-red-700': !active }" class="Clicar Aqui tw-text-4xl">Tchau Leo</div>
     </div>
-    {{active | json}}
 
 
     <button @click="toggle()" class="tw-btn-black tw-px-4 tw-py-2 tw-mt-10">Trocar</button>
