@@ -7,6 +7,7 @@ const dotenv = require('dotenv').config({
 const {MAGENTO_PATH} = dotenv.parsed;
 
 module.exports = {
+    mode: 'jit',
     purge: {
         content: [
             './src/components/**/*.html',
@@ -92,6 +93,7 @@ module.exports = {
                     '600': '#e61e19',
                     'hover': '#e61e19',
                     'default': '#e61e19',
+                    DEFAULT: '#e61e19',
                     '700': '#db2338',
                     '800': '#b11d31',
                     '900': '#8e1929',
