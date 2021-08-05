@@ -3,7 +3,16 @@
   <main class="mdl-layout__content">
     <div class="page-content">
       <div class="tw-mx-40">
-
+        <render-component component-title="Product Book Appointment">
+          <div class="tw-p-16">
+            <product-book-appointment></product-book-appointment>
+          </div>
+        </render-component>
+        <render-component component-title="New Product Card">
+          <div class="tw-p-16">
+            <new-product-card/>
+          </div>
+        </render-component>
         <render-component component-title="Cart Sidebar">
           <div class="tw-p-16">
             <country-menu></country-menu>
@@ -111,11 +120,15 @@ import AlertMessageBlock from "@/components/AlertMessageBlock";
 import TestJoao from "@/components/TestJoao";
 import CartSidebar from "@/components/CartSidebar";
 import CountryMenu from "@/components/header/CountryMenu";
+import NewProductCard from "@/components/main/product/NewProductCard";
+import ProductBookAppointment from "@/components/main/BookAppointment/ProductBookAppointment";
 
 
 export default {
   name: 'Main',
   components: {
+    ProductBookAppointment,
+    NewProductCard,
     CountryMenu,
     CartSidebar,
     TestJoao,
