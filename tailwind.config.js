@@ -43,6 +43,8 @@ module.exports = {
             'auto': 'auto',
         },
         screens: {
+            'xs': '480px',
+            // => @media (min-width: 640px) { ... }
             'sm': '640px',
             // => @media (min-width: 640px) { ... }
 
@@ -179,11 +181,15 @@ module.exports = {
             '7xl': '5.150rem', // + 1.0
         }
     },
-    variants: {
-        borderColor: ['hover'],
-        borderWidth: ['last'],
-        textColor: ['group-hover', 'hover'],
-        animation: ['hover', 'focus'],
-    },
-    plugins: [],
+    // variants: {
+    //     borderColor: ['hover'],
+    //     borderWidth: ['last'],
+    //     textColor: ['group-hover', 'hover'],
+    //     animation: ['hover', 'focus'],
+    // },
+    plugins: [
+        require("@tailwindcss/forms")({
+            strategy: 'class',
+        }),
+    ],
 }

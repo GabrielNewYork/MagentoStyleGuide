@@ -44,6 +44,11 @@ html {
         @apply tw-rotate-180;
     }
 
+    .tw-form-radio {
+        font-size: 100%;
+        @apply form-radio;
+    }
+
     @import "css/_buttons.css";
 
     @import "css/_alert-message-block.css";
