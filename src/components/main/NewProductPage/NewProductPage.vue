@@ -16,7 +16,12 @@
           <ProductDetailSize/>
           <ProductDetailMetalType/>
           <ProductDetailShape/>
+          <VariationIcon/>
           <ProductDetailCarat/>
+          <ProductAsSelect/>
+          <ProductShipping/>
+          <ProductDescription/>
+          <ProductDescriptionList/>
           <!-- Finish Form -->
         </div>
       </div>
@@ -40,9 +45,19 @@ import ProductDetailSize from "@/components/main/NewProductPage/ProductDetailSiz
 import ProductDetailMetalType from "@/components/main/NewProductPage/ProductDetailMetalType";
 import ProductDetailShape from "@/components/main/NewProductPage/ProductDetailShape";
 import ProductDetailCarat from "@/components/main/NewProductPage/ProductDetailCarat";
+import VariationIcon from "@/components/main/NewProductPage/VariationIcon";
+import ProductAsSelect from "@/components/main/NewProductPage/ProductAsSelect";
+import ProductShipping from "@/components/main/NewProductPage/ProductShipping";
+import ProductDescription from "@/components/main/NewProductPage/ProductDescription";
+import ProductDescriptionList from "@/components/main/NewProductPage/ProductDescriptionList";
 export default {
   name: "NewProductPage",
   components: {
+    ProductDescriptionList,
+    ProductDescription,
+    ProductShipping,
+    ProductAsSelect,
+    VariationIcon,
     ProductDetailCarat,
     ProductDetailShape,
     ProductDetailMetalType,

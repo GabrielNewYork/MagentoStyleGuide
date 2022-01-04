@@ -52,6 +52,8 @@ html {
     @import "css/_buttons.css";
 
     @import "css/_alert-message-block.css";
+
+    @import "css/_select-behavior.css";
 }
 
 @tailwind utilities;
