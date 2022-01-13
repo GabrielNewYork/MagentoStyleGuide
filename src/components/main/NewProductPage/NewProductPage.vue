@@ -5,6 +5,7 @@
         <div class="-tw-bg-red-100 lg:tw-col-span-7">
           <ImageGallery/>
           <WhatsIncluded/>
+          <ProductCarousel/>
         </div>
         <div class="lg:tw-col-span-5">
           <ProductTitle/>
@@ -50,9 +51,11 @@ import ProductAsSelect from "@/components/main/NewProductPage/ProductAsSelect";
 import ProductShipping from "@/components/main/NewProductPage/ProductShipping";
 import ProductDescription from "@/components/main/NewProductPage/ProductDescription";
 import ProductDescriptionList from "@/components/main/NewProductPage/ProductDescriptionList";
+import ProductCarousel from "@/components/main/NewProductPage/ProductCarousel";
 export default {
   name: "NewProductPage",
   components: {
+    ProductCarousel,
     ProductDescriptionList,
     ProductDescription,
     ProductShipping,
