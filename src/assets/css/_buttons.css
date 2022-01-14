@@ -1,7 +1,9 @@
 /* Buttons */
+
 .tw-btn-black {
     @apply tw-rounded tw-bg-black tw-text-white tw-transition tw-duration-300;
 }
+
 .tw-btn-black:hover {
     @apply tw-bg-brand-primary;
 }
@@ -9,6 +11,7 @@
 .tw-btn-black-o {
     @apply tw-border tw-rounded tw-text-black tw-no-underline tw-border tw-border-solid tw-border-black;
 }
+
 .tw-btn-black-o:hover {
     @apply tw-text-brand-primary tw-border-brand-primary tw-no-underline;
 }

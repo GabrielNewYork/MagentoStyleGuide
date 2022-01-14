@@ -1,6 +1,6 @@
 <template>
   <ul class="tw-max-w-xl">
-    <li class="linkCartProduct-- tw-border-b tw-border-brand-secondary-light last:tw-border-b-0" v-for="n in 4">
+    <li class="linkCartProduct-- tw-border-b tw-border-brand-secondary-light last:tw-border-b-0" v-for="n in 4" :key="n">
       <div class="tw-flex tw-py-8">
         <!-- ko template: 'Magento_Checkout/cart/modal-cart-item' -->
         <div class="imageContainer-- tw-mr-8" style="width: 70px;">

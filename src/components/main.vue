@@ -3,7 +3,12 @@
   <main class="mdl-layout__content">
     <div class="page-content">
       <div class="tw-mx-40">
-        <render-component component-title="Find Nearest Store">
+        <render-component component-title="Product Carousel">
+          <div class="tw-p-16">
+            <product-carousel :items="10"/>
+          </div>
+        </render-component>
+        <render-component component-title="Product Page">
           <div class="tw-p-16">
             <new-product-page></new-product-page>
           </div>
@@ -134,11 +139,13 @@ import NewProductCard from "@/components/main/product/NewProductCard";
 import ProductBookAppointment from "@/components/main/BookAppointment/ProductBookAppointment";
 import FindNearestStoreForm from "@/components/main/FindNearestStore/FindNearStoreForm";
 import NewProductPage from "@/components/main/NewProductPage/NewProductPage";
+import ProductCarousel from "@/components/main/NewProductPage/ProductCarousel";
 
 
 export default {
   name: 'Main',
   components: {
+    ProductCarousel,
     NewProductPage,
     FindNearestStoreForm,
     ProductBookAppointment,

@@ -7,8 +7,8 @@ const dotenv = require('dotenv').config({
 const {MAGENTO_PATH} = dotenv.parsed;
 
 module.exports = {
-    mode: 'jit',
-    purge: {
+    // mode: 'jit',
+    // purge: {
         content: [
             './src/components/**/*.html',
             './src/components/**/*.vue',
@@ -27,7 +27,7 @@ module.exports = {
             // keyframes: true,
             // fontFace: true,
         },
-    },
+    // },
     prefix: 'tw-',
     theme: {
         zIndex: {
@@ -100,8 +100,6 @@ module.exports = {
                     '800': '#b11d31',
                     '900': '#8e1929',
                 },
-
-
                 'red-darkest': '#8A120F',
                 'red-dark': '#B81814',
                 'red-base': '#E61E19',
@@ -191,5 +189,6 @@ module.exports = {
         require("@tailwindcss/forms")({
             strategy: 'class',
         }),
+        require('@tailwindcss/line-clamp'),
     ],
 }

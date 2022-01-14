@@ -1,8 +1,9 @@
-.tw---select.tw---select-active  > .tw---select-icon{
+
+.tw---select.tw---select-active > .tw---select-icon {
     @apply tw-rotate-180;
 }
 
-.tw---select.tw---select-active [data-target="dropdown"]{
+.tw---select.tw---select-active [data-target="dropdown"] {
     @apply tw-block;
 }
 
