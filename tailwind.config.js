@@ -10,6 +10,8 @@ module.exports = {
     // mode: 'jit',
     // purge: {
         content: [
+            './src/comp/**/*.vue',
+            './src/views/**/*.vue',
             './src/components/**/*.html',
             './src/components/**/*.vue',
             // Path to magento project
@@ -22,7 +24,7 @@ module.exports = {
         ],
         // These options are passed through directly to PurgeCSS
         options: {
-            safelist: ['container'],
+            safelist: ['container', 'tw-snap-start','tw-snap-center','tw-snap-end'],
             blocklist: [/^mdl-/, 'page-content', 'sidebar', 'search-area'],
             // keyframes: true,
             // fontFace: true,
