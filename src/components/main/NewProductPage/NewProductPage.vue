@@ -23,6 +23,7 @@
           <ProductShipping/>
           <ProductDescription/>
           <ProductDescriptionList/>
+          <AttributeMeasurements/>
           <!-- Finish Form -->
         </div>
       </div>
@@ -52,9 +53,11 @@ import ProductShipping from "@/components/main/NewProductPage/ProductShipping";
 import ProductDescription from "@/components/main/NewProductPage/ProductDescription";
 import ProductDescriptionList from "@/components/main/NewProductPage/ProductDescriptionList";
 import ProductCarousel from "@/components/main/NewProductPage/ProductCarousel";
+import AttributeMeasurements from "@/comp/product/AttributeMeasurements";
 export default {
   name: "NewProductPage",
   components: {
+    AttributeMeasurements,
     ProductCarousel,
     ProductDescriptionList,
     ProductDescription,

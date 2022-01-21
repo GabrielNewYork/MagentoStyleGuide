@@ -1,0 +1,3 @@
+.ProductCardSimple {
+    @apply tw-w-[200px] tw-border tw-overflow-hidden tw-relative tw-shrink tw-p-4 tw-bg-white;
+}

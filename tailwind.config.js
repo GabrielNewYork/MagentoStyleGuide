@@ -24,8 +24,8 @@ module.exports = {
         ],
         // These options are passed through directly to PurgeCSS
         options: {
-            safelist: ['container', 'tw-snap-start','tw-snap-center','tw-snap-end'],
-            blocklist: [/^mdl-/, 'page-content', 'sidebar', 'search-area'],
+            safelist: ['container', 'md:tw-gap-6', 'tw-snap-start','tw-snap-center','tw-snap-end'],
+            blocklist: [/^mdl-/, 'page-content', 'card-viewsimilar','card-item', 'panel','active','accordion', 'sidebar', 'search-area'],
             // keyframes: true,
             // fontFace: true,
         },

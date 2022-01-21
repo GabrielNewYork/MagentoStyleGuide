@@ -54,6 +54,10 @@ html {
     @import "css/_alert-message-block.css";
 
     @import "css/_select-behavior.css";
+
+    @import "css/_product-card-simple.css";
+
+    @import "css/_no-scroll-style.css";
 }
 
 @tailwind utilities;
