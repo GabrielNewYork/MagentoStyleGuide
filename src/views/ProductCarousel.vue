@@ -49,7 +49,7 @@
               <a :href="product.url" :title="product.title">
                 <div class="tw-relative tw-z-10">
                   <img class="tw-z-20 tw-relative tw-block tw-w-full" width="178" height="178" :src="product.img" :alt="product.title">
-                  <div class="tw-z-15 tw-absolute tw-top-[1px] tw-left-[1px] tw-right-[1px] tw-bottom-[1px] tw-bg-slate-200 tw-animate-pulse"></div>
+                  <div class="tw-z-15 tw-absolute tw-w-[9] tw-top-0 tw-left-0 tw-right-0 tw-bottom-0 tw-bg-slate-200 tw-animate-pulse"></div>
                 </div>
                 <h3 class="tw-text-black tw-text-base tw-line-clamp-2">{{ product.title }}</h3>
                 <div class="tw-flex tw-justify-between tw-mt-4">
