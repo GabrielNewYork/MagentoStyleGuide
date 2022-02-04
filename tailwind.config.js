@@ -143,6 +143,12 @@ module.exports = {
                     'lightest': '#EFEFF1',
                     'darkest': '#575965'
                 },
+                // 'brand-red': {
+                //     'bg':'#FFFAF6',
+                //     'light': '#FCF1F1',
+                //     'border': '#f8ece3',
+                //     'light2': '#e9d3d3'
+                // },
                 'brand-dark': {
                     DEFAULT: '#382E2C',
                     default: '#382E2C',
@@ -169,6 +175,7 @@ module.exports = {
             'sm': '1rem', // - 0.275
             'tiny': '1.275rem', // - 0.125
             'rg': '1.3rem',
+            'bs': '1.4rem', // 1.4
             'base': '1.4rem', // 1.4
             'slg': '1.4rem',
             'lg': '1.525rem', // + .125
@@ -193,4 +200,8 @@ module.exports = {
         }),
         require('@tailwindcss/line-clamp'),
     ],
+    corePlugins: {
+        // due to https://github.com/tailwindlabs/tailwindcss/issues/6602 - buttons disappear
+        preflight: false,
+    },
 }

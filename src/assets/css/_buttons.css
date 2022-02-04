@@ -9,7 +9,7 @@
 }
 
 .tw-btn-black-o {
-    @apply tw-border tw-rounded tw-text-black tw-no-underline tw-border tw-border-solid tw-border-black;
+    @apply tw-border tw-rounded tw-text-black tw-bg-white tw-no-underline tw-border tw-border-solid tw-border-black;
 }
 
 .tw-btn-black-o:hover {
