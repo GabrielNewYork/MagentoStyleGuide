@@ -44,6 +44,11 @@ export default new Router({
       name: 'find-a-store',
       component: () => import(/* webpackChunkName: "about" */ './views/FindAStore')
     },
+    {
+      path: '/thank-you',
+      name: 'thank-you',
+      component: () => import(/* webpackChunkName: "about" */ './views/ThankYouPage')
+    },
 
 
   ]

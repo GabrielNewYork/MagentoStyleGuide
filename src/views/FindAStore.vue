@@ -1,29 +1,33 @@
 <template>
   <div class="tw-container tw-flex tw-flex-col tw-justify-center tw-items-center tw-bg-gray-base">
     <div class="tw-flex tw-flex-col tw-w-full tw-max-w-[700px] tw-py-2 tw-bg-white tw-h-full tw-h-screen">
-      <header class="tw-px-4 tw-mt-3">
-        <h3 class="tw-font-lora tw-text-xl tw-text-black">Find A <span class="tw-text-brand-primary">Nearest Store</span></h3>
+      <header class="tw-px-4 tw-mt-3 tw-flex tw-flex-col">
+        <h3 class="tw-font-lora tw-text-2xl tw-text-black">Find A <span class="tw-text-brand-primary">Nearest Store</span></h3>
       </header>
-
         <!-- Input        -->
-        <div class="tw-mt-6 tw-px-4 tw-flex tw-w-full">
-          <input type="text" id="zipcode" placeholder="Change your zipcode here" class="tw-leading-none tw-border-black tw-input-text tw-flex-1 tw-rounded-r-none tw-text-rg tw-py-4 tw-px-2">
-          <button class="tw-leading-none tw-rounded tw-rounded-l-none tw-bg-brand-dark-base tw-uppercase tw-text-rg tw-py-4 tw-px-8 tw-text-white tw-transition tw-duration-300 hover:tw-bg-brand-primary">Update</button>
-        </div>
+        <form class="tw-mt-6 tw-px-4 tw-flex tw-w-full tw-items-start">
+          <div class="tw-w-full tw-flex-1 ">
+            <label for="find-near-store-zipcode" class="tw-hidden">Zipcode</label>
+            <input type="text" id="find-near-store-zipcode" placeholder="Change your zipcode here"
+                   class="tw-w-full tw-input-text tw-border-black tw-border-r-none tw-rounded-r-none tw-leading-8">
+            <div for="find-near-store-zipcode" generated="true" class="mage-error" id="find-near-store-zipcode-error">This is a required field.</div>
+          </div>
+          <button class="tw-btn-black tw-border tw-border-black  tw-flex-0 tw-basis-0 tw-self-start tw-shrink-0 tw-leading-8 tw-rounded tw-rounded-l-none tw-bg-brand-dark-base tw-uppercase tw-text-rg tw-py-4 tw-px-8 tw-text-white tw-transition tw-duration-300 hover:tw-bg-brand-primary">Update</button>
+        </form>
         <ul class="tw-px-4 tw-mt-6 tw-space-y-6 tw-scroll-smooth tw-overflow-y-auto tw-no-scroll-style">
           <li v-for="n in 20" :key="n" class="tw-w-full">
             <div class="tw-w-full tw-border tw-rounded tw-p-4">
               <div class="tw-flex tw-justify-between">
-                <h4 class="tw-text-black tw-text-xl tw-flex-1 tw-leading-10">Nome da joalheria gigante que não pode caber na tela gigante que não pode caber na tela gigante que não pode caber na tela</h4>
-                <div class="tw-text-brand-secondary tw-text-rg tw-shrink-0 tw-text-right tw-ml-4 tw-leading-10">2.3 Mile away</div>
+                <h4 class="tw-text-black tw-text-2xl  tw-flex-1 tw-leading-10">Robbins Brothers - Glendale</h4>
+                <div class="tw-text-brand-secondary tw-text-rg tw-shrink-0 tw-text-right tw-ml-12 tw-leading-10">2.3 Mile away</div>
               </div>
               <div class="tw-mt-2"><a href="#" class="tw-text-brand-primary hover:tw-underline tw-text-rg" target="_blank">View Profile</a></div>
               <div class="tw-mt-6 tw-text-rg tw-text-black">
                 <span class="tw-block">607 S. Hil SStreet, #316</span>
                 <span class="tw-block tw-mt-1">Los Angeles, CA, 90014, US</span>
               </div>
-              <ul class="tw-bg-gray-100 tw-inline-flex tw-py-2 tw-mt-6  tw-rounded tw-divide-x tw-text-sm tw-bg-purple-100 xs:tw-bg-red-100 sm:tw-bg-blue-100 sm:tw-text-rg tw-items-center">
-                <li class="tw-px-4 tw-py-0 tw-text-center">Bridal</li>
+              <ul class="tw-bg-gray-100 tw-inline-flex tw-py-2 tw-mt-6 tw-rounded tw-divide-x tw-text-rg sm:tw-text-rg tw-items-center">
+                <li class="tw-px-4 tw-py-0 tw-text-center tw-mb-0">Bridal</li>
                 <li class="tw-px-4 tw-py-0 tw-text-center">Fashion</li>
                 <li class="tw-px-4 tw-py-0 tw-text-center">Mens Bands</li>
                 <li class="tw-px-4 tw-py-0 tw-text-center">Stackables</li>

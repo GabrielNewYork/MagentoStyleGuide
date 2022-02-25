@@ -5,6 +5,9 @@
 }
 
 .tw-btn-black:hover {
+    @apply md:tw-bg-brand-primary;
+}
+.tw-btn-black:active {
     @apply tw-bg-brand-primary;
 }
 
